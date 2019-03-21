@@ -1,6 +1,10 @@
 #include "cnn.h"
 #include "hls_math.h"
-
+float _tanh(float x){
+#pragma HLS INLINE
+	float exp2x = expf(2*x)+1;
+	return (exp2x-2)/(exp2x);
+}
 // C1 layer
 // input 32*32
 // kernel 6
@@ -74,7 +78,7 @@ void c1(float input_image[c1_input_width*c1_input_width],
 		for(int col = 0; col < c1_output_size; col++){
 			row:
 			for(int row = 0; row < c1_output_size; row++){
-				output[kernel*c1_output_size*c1_output_size+col*c1_output_size+row] = tanh(conv_out[kernel][row][col]);
+				output[kernel*c1_output_size*c1_output_size+col*c1_output_size+row] = _tanh(conv_out[kernel][row][col]);
 			}
 		}
 	}
