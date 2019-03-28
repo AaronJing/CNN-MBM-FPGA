@@ -1,0 +1,38 @@
+/*
+ * Empty C++ Application
+ */
+#include <stdio.h>
+#include "xaxidma.h"
+#include "xc1.h"
+
+///// first convolution layer /////
+#define c1_input_width 4
+#define c1_filter 6
+///// 2D kernel 5*5			  /////
+#define c1_filter_size 2
+///// 3D output 28*28*6       /////
+#define c1_output_size 3
+#define c1_output_width 6
+
+#define mem_base_addr 0x01000000
+#define tx_buffer_base (mem_base_addr + 0x00100000)
+#define rx_buffer_base (mem_base_addr + 0x00300000)
+
+
+float input[c1_input_width][c1_input_width]={{0,1,1,1},
+				 {1,0,1,1},
+				 {1,1,0,1},
+				 {1,1,1,0}};
+
+float weight[c1_filter*c1_filter_size*c1_filter_size]={-1,1,1,1,
+														1,-1,1,1,
+														1,1,-1,1,
+														1,1,1,-1,
+														-1,1,1,1,
+														1,-1,1,1};
+float bias[c1_filter]={2,2,2,2,2,2};
+
+int main()
+{
+	return 0;
+}

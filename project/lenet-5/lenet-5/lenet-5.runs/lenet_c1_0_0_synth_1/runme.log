@@ -1,0 +1,858 @@
+
+*** Running vivado
+    with args -log lenet_c1_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source lenet_c1_0_0.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source lenet_c1_0_0.tcl -notrace
+Command: synth_design -top lenet_c1_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020-clg484'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020-clg484'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6340 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 376.316 ; gain = 83.230
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'lenet_c1_0_0' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ip/lenet_c1_0_0/synth/lenet_c1_0_0.vhd:106]
+INFO: [Synth 8-3491] module 'c1' declared at 'f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:12' bound to instance 'U0' of component 'c1' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ip/lenet_c1_0_0/synth/lenet_c1_0_0.vhd:217]
+INFO: [Synth 8-638] synthesizing module 'c1' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:67]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:188]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:191]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:246]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:249]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:251]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:255]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:257]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:261]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:263]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:266]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:268]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:272]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:277]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:283]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:289]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:293]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:298]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:304]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:313]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:317]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:323]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:333]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:340]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:349]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:353]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:375]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:387]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:397]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:399]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:401]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:405]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:407]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:409]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:440]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:442]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:444]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:446]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:448]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:450]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:452]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:454]
+INFO: [Synth 8-3491] module 'c1_CRTL_BUS_s_axi' declared at 'f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_CRTL_BUS_s_axi.vhd:12' bound to instance 'c1_CRTL_BUS_s_axi_U' of component 'c1_CRTL_BUS_s_axi' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:622]
+INFO: [Synth 8-638] synthesizing module 'c1_CRTL_BUS_s_axi' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_CRTL_BUS_s_axi.vhd:68]
+WARNING: [Synth 8-6014] Unused sequential element int_isr_reg was removed.  [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_CRTL_BUS_s_axi.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element int_isr_reg was removed.  [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_CRTL_BUS_s_axi.vhd:322]
+INFO: [Synth 8-256] done synthesizing module 'c1_CRTL_BUS_s_axi' (1#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_CRTL_BUS_s_axi.vhd:68]
+INFO: [Synth 8-3491] module 'c1_KERNEL_BUS_s_axi' declared at 'f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_KERNEL_BUS_s_axi.vhd:12' bound to instance 'c1_KERNEL_BUS_s_axi_U' of component 'c1_KERNEL_BUS_s_axi' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:653]
+INFO: [Synth 8-638] synthesizing module 'c1_KERNEL_BUS_s_axi' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_KERNEL_BUS_s_axi.vhd:57]
+INFO: [Synth 8-3491] module 'c1_KERNEL_BUS_s_axi_ram' declared at 'f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_KERNEL_BUS_s_axi.vhd:399' bound to instance 'int_filter_w' of component 'c1_KERNEL_BUS_s_axi_ram' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_KERNEL_BUS_s_axi.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'c1_KERNEL_BUS_s_axi_ram' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_KERNEL_BUS_s_axi.vhd:422]
+WARNING: [Synth 8-6014] Unused sequential element gen_write[0].mem_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element gen_write[0].mem_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element gen_write[2].mem_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element gen_write[2].mem_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element gen_write[3].mem_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element gen_write[3].mem_reg was removed. 
+INFO: [Synth 8-256] done synthesizing module 'c1_KERNEL_BUS_s_axi_ram' (2#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_KERNEL_BUS_s_axi.vhd:422]
+INFO: [Synth 8-3491] module 'c1_KERNEL_BUS_s_axi_ram' declared at 'f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_KERNEL_BUS_s_axi.vhd:399' bound to instance 'int_filter_b' of component 'c1_KERNEL_BUS_s_axi_ram' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_KERNEL_BUS_s_axi.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'c1_KERNEL_BUS_s_axi_ram__parameterized1' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_KERNEL_BUS_s_axi.vhd:422]
+WARNING: [Synth 8-6014] Unused sequential element gen_write[0].mem_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element gen_write[0].mem_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element gen_write[2].mem_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element gen_write[2].mem_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element gen_write[3].mem_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element gen_write[3].mem_reg was removed. 
+INFO: [Synth 8-256] done synthesizing module 'c1_KERNEL_BUS_s_axi_ram__parameterized1' (2#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_KERNEL_BUS_s_axi.vhd:422]
+INFO: [Synth 8-256] done synthesizing module 'c1_KERNEL_BUS_s_axi' (3#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_KERNEL_BUS_s_axi.vhd:57]
+INFO: [Synth 8-3491] module 'c1_input_image_bram' declared at 'f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_input_image_bram.vhd:77' bound to instance 'input_image_bram_U' of component 'c1_input_image_bram' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:685]
+INFO: [Synth 8-638] synthesizing module 'c1_input_image_bram' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_input_image_bram.vhd:92]
+INFO: [Synth 8-3491] module 'c1_input_image_bram_ram' declared at 'f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_input_image_bram.vhd:13' bound to instance 'c1_input_image_bram_ram_U' of component 'c1_input_image_bram_ram' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_input_image_bram.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'c1_input_image_bram_ram' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_input_image_bram.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'c1_input_image_bram_ram' (4#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_input_image_bram.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'c1_input_image_bram' (5#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_input_image_bram.vhd:92]
+INFO: [Synth 8-3491] module 'c1_conv_out' declared at 'f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_conv_out.vhd:77' bound to instance 'conv_out_U' of component 'c1_conv_out' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:699]
+INFO: [Synth 8-638] synthesizing module 'c1_conv_out' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_conv_out.vhd:92]
+INFO: [Synth 8-3491] module 'c1_conv_out_ram' declared at 'f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_conv_out.vhd:13' bound to instance 'c1_conv_out_ram_U' of component 'c1_conv_out_ram' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_conv_out.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'c1_conv_out_ram' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_conv_out.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'c1_conv_out_ram' (6#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_conv_out.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'c1_conv_out' (7#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_conv_out.vhd:92]
+INFO: [Synth 8-3491] module 'exp_generic_float_s' declared at 'f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_float_s.vhd:12' bound to instance 'grp_exp_generic_float_s_fu_339' of component 'exp_generic_float_s' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:713]
+INFO: [Synth 8-638] synthesizing module 'exp_generic_float_s' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_float_s.vhd:25]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_float_s.vhd:77]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_float_s.vhd:80]
+INFO: [Synth 8-3491] module 'exp_generic_floatbkb' declared at 'f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_floatbkb.vhd:321' bound to instance 'hls_exp_reduce_a_1_U' of component 'exp_generic_floatbkb' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_float_s.vhd:340]
+INFO: [Synth 8-638] synthesizing module 'exp_generic_floatbkb' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_floatbkb.vhd:334]
+INFO: [Synth 8-3491] module 'exp_generic_floatbkb_rom' declared at 'f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_floatbkb.vhd:12' bound to instance 'exp_generic_floatbkb_rom_U' of component 'exp_generic_floatbkb_rom' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_floatbkb.vhd:346]
+INFO: [Synth 8-638] synthesizing module 'exp_generic_floatbkb_rom' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_floatbkb.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'exp_generic_floatbkb_rom' (8#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_floatbkb.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'exp_generic_floatbkb' (9#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_floatbkb.vhd:334]
+INFO: [Synth 8-3491] module 'exp_generic_floatcud' declared at 'f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_floatcud.vhd:77' bound to instance 'hls_exp_reduce_a_U' of component 'exp_generic_floatcud' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_float_s.vhd:352]
+INFO: [Synth 8-638] synthesizing module 'exp_generic_floatcud' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_floatcud.vhd:90]
+INFO: [Synth 8-3491] module 'exp_generic_floatcud_rom' declared at 'f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_floatcud.vhd:12' bound to instance 'exp_generic_floatcud_rom_U' of component 'exp_generic_floatcud_rom' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_floatcud.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'exp_generic_floatcud_rom' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_floatcud.vhd:27]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "distributed" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_floatcud.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'exp_generic_floatcud_rom' (10#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_floatcud.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'exp_generic_floatcud' (11#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_floatcud.vhd:90]
+INFO: [Synth 8-3491] module 'c1_mac_muladd_13ndEe' declared at 'f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_mac_muladd_13ndEe.vhd:42' bound to instance 'c1_mac_muladd_13ndEe_U0' of component 'c1_mac_muladd_13ndEe' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_float_s.vhd:364]
+INFO: [Synth 8-638] synthesizing module 'c1_mac_muladd_13ndEe' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_mac_muladd_13ndEe.vhd:57]
+INFO: [Synth 8-3491] module 'c1_mac_muladd_13ndEe_DSP48_0' declared at 'f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_mac_muladd_13ndEe.vhd:12' bound to instance 'c1_mac_muladd_13ndEe_DSP48_0_U' of component 'c1_mac_muladd_13ndEe_DSP48_0' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_mac_muladd_13ndEe.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'c1_mac_muladd_13ndEe_DSP48_0' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_mac_muladd_13ndEe.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'c1_mac_muladd_13ndEe_DSP48_0' (12#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_mac_muladd_13ndEe.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'c1_mac_muladd_13ndEe' (13#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_mac_muladd_13ndEe.vhd:57]
+INFO: [Synth 8-3491] module 'c1_mul_mul_18ns_1eOg' declared at 'f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_mul_mul_18ns_1eOg.vhd:36' bound to instance 'c1_mul_mul_18ns_1eOg_U1' of component 'c1_mul_mul_18ns_1eOg' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_float_s.vhd:378]
+INFO: [Synth 8-638] synthesizing module 'c1_mul_mul_18ns_1eOg' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_mul_mul_18ns_1eOg.vhd:49]
+INFO: [Synth 8-3491] module 'c1_mul_mul_18ns_1eOg_DSP48_1' declared at 'f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_mul_mul_18ns_1eOg.vhd:6' bound to instance 'c1_mul_mul_18ns_1eOg_DSP48_1_U' of component 'c1_mul_mul_18ns_1eOg_DSP48_1' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_mul_mul_18ns_1eOg.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'c1_mul_mul_18ns_1eOg_DSP48_1' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_mul_mul_18ns_1eOg.vhd:14]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_mul_mul_18ns_1eOg.vhd:15]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_mul_mul_18ns_1eOg.vhd:16]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_mul_mul_18ns_1eOg.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'c1_mul_mul_18ns_1eOg_DSP48_1' (14#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_mul_mul_18ns_1eOg.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'c1_mul_mul_18ns_1eOg' (15#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_mul_mul_18ns_1eOg.vhd:49]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state1_pp0_stage0_iter0_reg was removed.  [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_float_s.vhd:586]
+WARNING: [Synth 8-6014] Unused sequential element ap_idle_pp0_0to5_reg was removed.  [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_float_s.vhd:631]
+WARNING: [Synth 8-6014] Unused sequential element ap_reset_idle_pp0_reg was removed.  [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_float_s.vhd:651]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_28_fu_804_p3_reg' and it is trimmed from '32' to '31' bits. [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_float_s.vhd:552]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage0_flag00011011_reg was removed.  [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_float_s.vhd:412]
+WARNING: [Synth 8-6014] Unused sequential element hls_exp_reduce_a_ce0_reg was removed.  [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_float_s.vhd:361]
+INFO: [Synth 8-256] done synthesizing module 'exp_generic_float_s' (16#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_float_s.vhd:25]
+INFO: [Synth 8-3491] module 'c1_fadd_32ns_32nsfYi' declared at 'f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_fadd_32ns_32nsfYi.vhd:11' bound to instance 'c1_fadd_32ns_32nsfYi_U5' of component 'c1_fadd_32ns_32nsfYi' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:724]
+INFO: [Synth 8-638] synthesizing module 'c1_fadd_32ns_32nsfYi' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_fadd_32ns_32nsfYi.vhd:29]
+INFO: [Synth 8-3491] module 'c1_ap_fadd_2_full_dsp_32' declared at 'f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/ip/c1_ap_fadd_2_full_dsp_32.vhd:59' bound to instance 'c1_ap_fadd_2_full_dsp_32_u' of component 'c1_ap_fadd_2_full_dsp_32' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_fadd_32ns_32nsfYi.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'c1_ap_fadd_2_full_dsp_32' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/ip/c1_ap_fadd_2_full_dsp_32.vhd:72]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_4' declared at 'f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/4a02/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_4' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/ip/c1_ap_fadd_2_full_dsp_32.vhd:197]
+INFO: [Synth 8-256] done synthesizing module 'c1_ap_fadd_2_full_dsp_32' (34#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/ip/c1_ap_fadd_2_full_dsp_32.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'c1_fadd_32ns_32nsfYi' (35#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_fadd_32ns_32nsfYi.vhd:29]
+INFO: [Synth 8-3491] module 'c1_fmul_32ns_32nsg8j' declared at 'f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_fmul_32ns_32nsg8j.vhd:11' bound to instance 'c1_fmul_32ns_32nsg8j_U6' of component 'c1_fmul_32ns_32nsg8j' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:739]
+INFO: [Synth 8-638] synthesizing module 'c1_fmul_32ns_32nsg8j' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_fmul_32ns_32nsg8j.vhd:29]
+INFO: [Synth 8-3491] module 'c1_ap_fmul_0_max_dsp_32' declared at 'f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/ip/c1_ap_fmul_0_max_dsp_32.vhd:59' bound to instance 'c1_ap_fmul_0_max_dsp_32_u' of component 'c1_ap_fmul_0_max_dsp_32' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_fmul_32ns_32nsg8j.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'c1_ap_fmul_0_max_dsp_32' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/ip/c1_ap_fmul_0_max_dsp_32.vhd:70]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_4' declared at 'f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/4a02/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_4' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/ip/c1_ap_fmul_0_max_dsp_32.vhd:193]
+INFO: [Synth 8-256] done synthesizing module 'c1_ap_fmul_0_max_dsp_32' (43#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/ip/c1_ap_fmul_0_max_dsp_32.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'c1_fmul_32ns_32nsg8j' (44#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_fmul_32ns_32nsg8j.vhd:29]
+INFO: [Synth 8-3491] module 'c1_fdiv_32ns_32nshbi' declared at 'f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_fdiv_32ns_32nshbi.vhd:11' bound to instance 'c1_fdiv_32ns_32nshbi_U7' of component 'c1_fdiv_32ns_32nshbi' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:754]
+INFO: [Synth 8-638] synthesizing module 'c1_fdiv_32ns_32nshbi' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_fdiv_32ns_32nshbi.vhd:29]
+INFO: [Synth 8-3491] module 'c1_ap_fdiv_8_no_dsp_32' declared at 'f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/ip/c1_ap_fdiv_8_no_dsp_32.vhd:59' bound to instance 'c1_ap_fdiv_8_no_dsp_32_u' of component 'c1_ap_fdiv_8_no_dsp_32' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_fdiv_32ns_32nshbi.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'c1_ap_fdiv_8_no_dsp_32' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/ip/c1_ap_fdiv_8_no_dsp_32.vhd:72]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_4' declared at 'f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/4a02/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_4' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/ip/c1_ap_fdiv_8_no_dsp_32.vhd:197]
+INFO: [Synth 8-256] done synthesizing module 'c1_ap_fdiv_8_no_dsp_32' (51#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/ip/c1_ap_fdiv_8_no_dsp_32.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'c1_fdiv_32ns_32nshbi' (52#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_fdiv_32ns_32nshbi.vhd:29]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state22_reg was removed.  [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:1541]
+WARNING: [Synth 8-6014] Unused sequential element input_image_TDATA_blk_n_reg was removed.  [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:1721]
+WARNING: [Synth 8-6014] Unused sequential element output_r_TDATA_blk_n_reg was removed.  [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:1867]
+WARNING: [Synth 8-6014] Unused sequential element ap_ready_reg was removed.  [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:649]
+WARNING: [Synth 8-6014] Unused sequential element input_image_data_0_ack_out_reg was removed.  [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:807]
+WARNING: [Synth 8-6014] Unused sequential element input_image_last_0_ack_out_reg was removed.  [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:855]
+WARNING: [Synth 8-6014] Unused sequential element output_last_1_vld_in_reg was removed.  [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:937]
+INFO: [Synth 8-256] done synthesizing module 'c1' (53#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'lenet_c1_0_0' (54#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ip/lenet_c1_0_0/synth/lenet_c1_0_0.vhd:106]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized23 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized23 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized23 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_dec_op_lat__parameterized0 has unconnected port DEC_OP_STATE[11]
+WARNING: [Synth 8-3331] design flt_dec_op_lat__parameterized0 has unconnected port DEC_OP_STATE[10]
+WARNING: [Synth 8-3331] design flt_dec_op_lat__parameterized0 has unconnected port DEC_OP_STATE[9]
+WARNING: [Synth 8-3331] design flt_dec_op_lat__parameterized0 has unconnected port DEC_OP_STATE[8]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized45 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized45 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized45 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized45 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized45 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized11 has unconnected port B[7]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized95 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized95 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized95 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized95 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized95 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized31 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized31 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized31 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized31 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized31 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized93 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized93 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized93 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized93 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized93 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_round_bit has unconnected port NORMALIZE[1]
+WARNING: [Synth 8-3331] design flt_round_bit has unconnected port FIXED_POINT
+WARNING: [Synth 8-3331] design flt_round_bit has unconnected port FIX_MANT_SIGN
+WARNING: [Synth 8-3331] design flt_round_bit has unconnected port SIGN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized53 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized53 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized53 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized53 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized53 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized3 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized3 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized3 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized3 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized75 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized75 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized75 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized75 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized75 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized66 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized66 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized66 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized66 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized66 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized85 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized85 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized85 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized91 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized91 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized91 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized89 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized89 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized89 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized87 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized87 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized87 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized49 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized49 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized49 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized49 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized49 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized51 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized51 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized51 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized51 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized51 has unconnected port SINIT
+WARNING: [Synth 8-3331] design special_detect__parameterized1 has unconnected port A[31]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized83 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized83 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized83 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized83 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized83 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_div_exp has unconnected port ROUND_EXP_INC
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized77 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized77 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized77 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized77 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized77 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized6 has unconnected port B[24]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized73 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized73 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized73 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized73 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized73 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized81 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized81 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized81 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized15 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized15 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized15 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized15 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized15 has unconnected port SINIT
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 480.520 ; gain = 187.434
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 480.520 ; gain = 187.434
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1458 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ip/lenet_c1_0_0/constraints/c1_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ip/lenet_c1_0_0/constraints/c1_ooc.xdc] for cell 'U0'
+Parsing XDC File [F:/project/lenet-5/lenet-5/lenet-5.runs/lenet_c1_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [F:/project/lenet-5/lenet-5/lenet-5.runs/lenet_c1_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 11 instances were transformed.
+  FDE => FDRE: 11 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 720.816 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 720.816 ; gain = 427.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 720.816 ; gain = 427.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  F:/project/lenet-5/lenet-5/lenet-5.runs/lenet_c1_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 720.816 ; gain = 427.730
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'c1_CRTL_BUS_s_axi'
+WARNING: [Synth 8-6014] Unused sequential element wstate_reg was removed.  [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_CRTL_BUS_s_axi.vhd:120]
+INFO: [Synth 8-5544] ROM "ARREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RVALID_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "BVALID" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "WREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "AWREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-3936] Found unconnected internal register 'waddr_reg' and it is trimmed from '9' to '7' bits. [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_KERNEL_BUS_s_axi.vhd:242]
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'c1_KERNEL_BUS_s_axi'
+WARNING: [Synth 8-6014] Unused sequential element wstate_reg was removed.  [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_KERNEL_BUS_s_axi.vhd:204]
+INFO: [Synth 8-5544] ROM "ARREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "BVALID" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "WREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "AWREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element q0_reg was removed.  [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_floatbkb.vhd:310]
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "mem". This will be implemented in logic
+WARNING: [Synth 8-3936] Found unconnected internal register 'p_Val2_6_reg_1028_reg' and it is trimmed from '28' to '27' bits. [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_float_s.vhd:547]
+WARNING: [Synth 8-3936] Found unconnected internal register 'sh_assign_1_cast_reg_955_reg' and it is trimmed from '32' to '31' bits. [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_float_s.vhd:505]
+INFO: [Synth 8-5546] ROM "tmp_i_i_fu_208_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_1_i_i_fu_214_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_10_fu_427_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_3_i_i_fu_226_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "det_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_int_up" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "chunk_is_zero_ip" won't be mapped to RAM because address size (36) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_det" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_det" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_int_up" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_30_reg_882_reg' and it is trimmed from '7' to '6' bits. [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:1284]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_24_cast_reg_864_reg' and it is trimmed from '7' to '6' bits. [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:1186]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_27_reg_792_reg' and it is trimmed from '7' to '6' bits. [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:1168]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_21_cast_reg_769_reg' and it is trimmed from '7' to '6' bits. [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1.vhd:1177]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "exitcond2_fu_644_p2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond9_fu_397_p2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond8_fu_423_p2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond7_fu_471_p2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond6_fu_504_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond5_fu_530_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_fu_542_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond3_fu_570_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond1_fu_683_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond_fu_715_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_image_data_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_35_fu_727_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output_data_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output_last_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_32_fu_695_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_s_fu_656_p2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element wstate_reg was removed.  [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_CRTL_BUS_s_axi.vhd:120]
+WARNING: [Synth 8-6014] Unused sequential element wstate_reg was removed.  [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_CRTL_BUS_s_axi.vhd:120]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                              011
+*
+                  wridle |                             0010 |                              000
+                  wrdata |                             0100 |                              001
+                  wrresp |                             1000 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'c1_CRTL_BUS_s_axi'
+WARNING: [Synth 8-6014] Unused sequential element wstate_reg was removed.  [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_CRTL_BUS_s_axi.vhd:120]
+INFO: [Synth 8-3971] The signal gen_write[1].mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_write[1].mem_reg was recognized as a true dual port RAM template.
+WARNING: [Synth 8-6014] Unused sequential element wstate_reg was removed.  [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_KERNEL_BUS_s_axi.vhd:204]
+WARNING: [Synth 8-6014] Unused sequential element wstate_reg was removed.  [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_KERNEL_BUS_s_axi.vhd:204]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                              011
+*
+                  wridle |                             0010 |                              000
+                  wrdata |                             0100 |                              001
+                  wrresp |                             1000 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'c1_KERNEL_BUS_s_axi'
+WARNING: [Synth 8-6014] Unused sequential element wstate_reg was removed.  [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/c1_KERNEL_BUS_s_axi.vhd:204]
+INFO: [Synth 8-5583] The signal ram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 720.816 ; gain = 427.730
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'U0/c1_fadd_32ns_32nsfYi_U5/c1_ap_fadd_2_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'U0/c1_fadd_32ns_32nsfYi_U5/c1_ap_fadd_2_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fadd_32ns_32nsfYi_U5/c1_ap_fadd_2_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'U0/c1_fadd_32ns_32nsfYi_U5/c1_ap_fadd_2_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fadd_32ns_32nsfYi_U5/c1_ap_fadd_2_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_DELAY' (delay__parameterized0) to 'U0/c1_fadd_32ns_32nsfYi_U5/c1_ap_fadd_2_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_ADD_IP_DELAY'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fmul_32ns_32nsg8j_U6/c1_ap_fmul_0_max_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'U0/c1_fmul_32ns_32nsg8j_U6/c1_ap_fmul_0_max_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fmul_32ns_32nsg8j_U6/c1_ap_fmul_0_max_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'U0/c1_fmul_32ns_32nsg8j_U6/c1_ap_fmul_0_max_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW' (delay__parameterized0) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[0].ND_DEL' (delay__parameterized0) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[1].ND_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[0].ND_DEL' (delay__parameterized0) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[2].ND_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[4].ND_DEL' (delay__parameterized0) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[5].ND_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[4].ND_DEL' (delay__parameterized0) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[6].ND_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[8].ND_DEL' (delay__parameterized0) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[9].ND_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[8].ND_DEL' (delay__parameterized0) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[10].ND_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[12].ND_DEL' (delay__parameterized0) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[13].ND_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[12].ND_DEL' (delay__parameterized0) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[14].ND_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[16].ND_DEL' (delay__parameterized0) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[17].ND_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[16].ND_DEL' (delay__parameterized0) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[18].ND_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[20].ND_DEL' (delay__parameterized0) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[21].ND_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[20].ND_DEL' (delay__parameterized0) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[22].ND_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[24].ND_DEL' (delay__parameterized0) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[25].ND_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[0].MANT_DEL' (delay__parameterized43) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[1].MANT_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[0].MANT_DEL' (delay__parameterized43) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[2].MANT_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[4].MANT_DEL' (delay__parameterized43) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[5].MANT_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[4].MANT_DEL' (delay__parameterized43) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[6].MANT_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[8].MANT_DEL' (delay__parameterized43) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[9].MANT_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[8].MANT_DEL' (delay__parameterized43) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[10].MANT_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[12].MANT_DEL' (delay__parameterized43) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[13].MANT_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[12].MANT_DEL' (delay__parameterized43) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[14].MANT_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[16].MANT_DEL' (delay__parameterized43) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[17].MANT_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[16].MANT_DEL' (delay__parameterized43) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[18].MANT_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[20].MANT_DEL' (delay__parameterized43) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[21].MANT_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[20].MANT_DEL' (delay__parameterized43) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[22].MANT_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[24].MANT_DEL' (delay__parameterized43) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[25].MANT_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized0) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized0) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/NORMALIZE_DEL' (delay__parameterized16) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/NORMALIZE_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized28) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized28) to 'U0/c1_fdiv_32ns_32nshbi_U7/c1_ap_fdiv_8_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_pp0_iter2_p_Val2_9_reg_961_reg' and it is trimmed from '36' to '27' bits. [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_float_s.vhd:522]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_14_reg_1008_reg' and it is trimmed from '36' to '26' bits. [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_float_s.vhd:551]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_reg_pp0_iter1_p_Val2_9_reg_961_reg' and it is trimmed from '36' to '27' bits. [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_float_s.vhd:495]
+WARNING: [Synth 8-3936] Found unconnected internal register 'p_Val2_9_reg_961_reg' and it is trimmed from '36' to '27' bits. [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_float_s.vhd:495]
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5546] ROM "tmp_10_fu_427_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_i_i_fu_208_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_3_i_i_fu_226_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_1_i_i_fu_214_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element hls_exp_reduce_a_1_U/exp_generic_floatbkb_rom_U/q0_reg was removed.  [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_floatbkb.vhd:310]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_float_s.vhd:710]
+WARNING: [Synth 8-6014] Unused sequential element tmp_7_reg_972_reg was removed.  [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/03d7/hdl/vhdl/exp_generic_float_s.vhd:374]
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3971] The signal c1_KERNEL_BUS_s_axi_U/int_filter_w/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal c1_KERNEL_BUS_s_axi_U/int_filter_b/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-5583] The signal input_image_bram_U/c1_input_image_bram_ram_U/ram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/tmp_36_reg_977_reg[0]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/tmp_1_reg_966_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/p_Result_s_reg_925_reg[0]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/p_Val2_25_cast1_reg_945_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/p_Val2_25_cast1_reg_945_reg[28]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/p_Val2_25_cast1_reg_945_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/p_Val2_25_cast1_reg_945_reg[29]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/p_Val2_25_cast1_reg_945_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/p_Val2_25_cast1_reg_945_reg[30]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/p_Val2_25_cast1_reg_945_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/p_Val2_25_cast1_reg_945_reg[31]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/p_Val2_25_cast1_reg_945_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/p_Val2_25_cast1_reg_945_reg[32]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/p_Val2_25_cast1_reg_945_reg[33]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/p_Val2_25_cast1_reg_945_reg[33]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/p_Val2_25_cast1_reg_945_reg[34]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/p_Val2_25_cast1_reg_945_reg[34]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/p_Val2_25_cast1_reg_945_reg[35]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/p_Val2_25_cast1_reg_945_reg[35]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/tmp_42_reg_990_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/tmp_1_reg_966_reg[0]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/p_Val2_9_reg_961_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/tmp_1_reg_966_reg[16]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/p_Val2_9_reg_961_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/tmp_1_reg_966_reg[8]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/p_Val2_9_reg_961_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/tmp_1_reg_966_reg[4]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/p_Val2_9_reg_961_reg[8]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/tmp_1_reg_966_reg[20]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/p_Val2_9_reg_961_reg[24]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/tmp_1_reg_966_reg[12]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/p_Val2_9_reg_961_reg[16]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/tmp_1_reg_966_reg[2]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/p_Val2_9_reg_961_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/tmp_1_reg_966_reg[18]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/p_Val2_9_reg_961_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/tmp_1_reg_966_reg[10]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/p_Val2_9_reg_961_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/tmp_1_reg_966_reg[6]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/p_Val2_9_reg_961_reg[10]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/tmp_1_reg_966_reg[22]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/p_Val2_9_reg_961_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/tmp_1_reg_966_reg[14]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/p_Val2_9_reg_961_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/tmp_1_reg_966_reg[1]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/p_Val2_9_reg_961_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/tmp_1_reg_966_reg[17]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/p_Val2_9_reg_961_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/tmp_1_reg_966_reg[9]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/p_Val2_9_reg_961_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/tmp_1_reg_966_reg[5]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/p_Val2_9_reg_961_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/tmp_1_reg_966_reg[21]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/p_Val2_9_reg_961_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/tmp_1_reg_966_reg[13]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/p_Val2_9_reg_961_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/tmp_1_reg_966_reg[3]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/p_Val2_9_reg_961_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/tmp_1_reg_966_reg[19]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/p_Val2_9_reg_961_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/tmp_1_reg_966_reg[11]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/p_Val2_9_reg_961_reg[15]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/tmp_1_reg_966_reg[7]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/p_Val2_9_reg_961_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/tmp_1_reg_966_reg[15]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/p_Val2_9_reg_961_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/ap_reg_pp0_iter1_p_Result_s_reg_925_reg[0]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/ap_reg_pp0_iter1_tmp_42_reg_990_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/ap_reg_pp0_iter2_p_Result_s_reg_925_reg[0]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/ap_reg_pp0_iter2_tmp_42_reg_990_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/ap_reg_pp0_iter3_p_Result_s_reg_925_reg[0]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/ap_reg_pp0_iter3_tmp_42_reg_990_reg[0]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\grp_exp_generic_float_s_fu_339/ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/ap_reg_pp0_iter4_p_Result_s_reg_925_reg[0]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/ap_reg_pp0_iter4_tmp_42_reg_990_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_exp_generic_float_s_fu_339/ap_reg_pp0_iter5_p_Result_s_reg_925_reg[0]' (FDE) to 'U0/grp_exp_generic_float_s_fu_339/ap_reg_pp0_iter5_tmp_42_reg_990_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\tmp_i_i_i_reg_923_reg[31] )
+INFO: [Synth 8-3886] merging instance 'U0/c1_KERNEL_BUS_s_axi_U/rstate_reg[2]' (FDS) to 'U0/c1_CRTL_BUS_s_axi_U/rstate_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/c1_KERNEL_BUS_s_axi_U/rstate_reg[1]' (FDS) to 'U0/c1_CRTL_BUS_s_axi_U/rstate_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[4]' (FDE) to 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[5]' (FDE) to 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[6]' (FDE) to 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[8]' (FDE) to 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[9]' (FDE) to 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[10]' (FDE) to 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[11]' (FDE) to 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[12]' (FDE) to 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[13]' (FDE) to 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[14]' (FDE) to 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[15]' (FDE) to 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[16]'
+INFO: [Synth 8-3886] merging instance 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[16]' (FDE) to 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[17]' (FDE) to 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[18]' (FDE) to 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[19]' (FDE) to 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[20]' (FDE) to 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[21]' (FDE) to 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[22]' (FDE) to 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[23]' (FDE) to 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[24]'
+INFO: [Synth 8-3886] merging instance 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[24]' (FDE) to 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[25]' (FDE) to 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[26]' (FDE) to 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[27]' (FDE) to 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[28]' (FDE) to 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[29]' (FDE) to 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[30]' (FDE) to 'U0/c1_CRTL_BUS_s_axi_U/rdata_data_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\c1_CRTL_BUS_s_axi_U/rdata_data_reg[31] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\c1_CRTL_BUS_s_axi_U/rstate_reg[2] )
+WARNING: [Synth 8-3332] Sequential element (grp_exp_generic_float_s_fu_339/ap_CS_fsm_reg[0]) is unused and will be removed from module c1.
+WARNING: [Synth 8-3332] Sequential element (grp_exp_generic_float_s_fu_339/ap_enable_reg_pp0_iter4_reg) is unused and will be removed from module c1.
+WARNING: [Synth 8-3332] Sequential element (grp_exp_generic_float_s_fu_339/ap_enable_reg_pp0_iter5_reg) is unused and will be removed from module c1.
+WARNING: [Synth 8-3332] Sequential element (grp_exp_generic_float_s_fu_339/ap_enable_reg_pp0_iter6_reg) is unused and will be removed from module c1.
+WARNING: [Synth 8-3332] Sequential element (grp_exp_generic_float_s_fu_339/p_Val2_1_reg_1033_reg[15]) is unused and will be removed from module c1.
+WARNING: [Synth 8-3332] Sequential element (grp_exp_generic_float_s_fu_339/p_Val2_1_reg_1033_reg[14]) is unused and will be removed from module c1.
+WARNING: [Synth 8-3332] Sequential element (grp_exp_generic_float_s_fu_339/p_Val2_1_reg_1033_reg[13]) is unused and will be removed from module c1.
+WARNING: [Synth 8-3332] Sequential element (grp_exp_generic_float_s_fu_339/p_Val2_1_reg_1033_reg[12]) is unused and will be removed from module c1.
+WARNING: [Synth 8-3332] Sequential element (grp_exp_generic_float_s_fu_339/p_Val2_1_reg_1033_reg[11]) is unused and will be removed from module c1.
+WARNING: [Synth 8-3332] Sequential element (grp_exp_generic_float_s_fu_339/p_Val2_1_reg_1033_reg[10]) is unused and will be removed from module c1.
+WARNING: [Synth 8-3332] Sequential element (grp_exp_generic_float_s_fu_339/p_Val2_1_reg_1033_reg[9]) is unused and will be removed from module c1.
+WARNING: [Synth 8-3332] Sequential element (grp_exp_generic_float_s_fu_339/p_Val2_1_reg_1033_reg[8]) is unused and will be removed from module c1.
+WARNING: [Synth 8-3332] Sequential element (grp_exp_generic_float_s_fu_339/p_Val2_1_reg_1033_reg[7]) is unused and will be removed from module c1.
+WARNING: [Synth 8-3332] Sequential element (grp_exp_generic_float_s_fu_339/p_Val2_1_reg_1033_reg[6]) is unused and will be removed from module c1.
+WARNING: [Synth 8-3332] Sequential element (grp_exp_generic_float_s_fu_339/p_Val2_1_reg_1033_reg[5]) is unused and will be removed from module c1.
+WARNING: [Synth 8-3332] Sequential element (grp_exp_generic_float_s_fu_339/p_Val2_1_reg_1033_reg[4]) is unused and will be removed from module c1.
+WARNING: [Synth 8-3332] Sequential element (grp_exp_generic_float_s_fu_339/p_Val2_1_reg_1033_reg[3]) is unused and will be removed from module c1.
+WARNING: [Synth 8-3332] Sequential element (grp_exp_generic_float_s_fu_339/p_Val2_1_reg_1033_reg[2]) is unused and will be removed from module c1.
+WARNING: [Synth 8-3332] Sequential element (grp_exp_generic_float_s_fu_339/p_Val2_1_reg_1033_reg[1]) is unused and will be removed from module c1.
+WARNING: [Synth 8-3332] Sequential element (grp_exp_generic_float_s_fu_339/p_Val2_1_reg_1033_reg[0]) is unused and will be removed from module c1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/NORM_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_4_viv.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[5].pipe_reg[5][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[6].pipe_reg[6][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[7].pipe_reg[7][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[8].pipe_reg[8][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/SIGN_RND_DEL/i_pipe/opt_has_pipe.i_pipe[7].pipe_reg[7][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[7].pipe_reg[7][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/DIV_BY_ZERO_DEL/i_pipe/opt_has_pipe.i_pipe[7].pipe_reg[7][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][3]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][2]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][1]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][3]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][2]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][1]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][3]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][2]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][1]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][3]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][2]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][1]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6][3]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6][2]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6][1]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[7].pipe_reg[7][3]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[7].pipe_reg[7][2]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[7].pipe_reg[7][1]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/EXP/FLOW_UP_DEL/i_pipe/opt_has_pipe.i_pipe[7].pipe_reg[7][0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/OP/DIV_BY_ZERO_REG.REG/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/OP/FLAGS_REG.NOT_LATE_UPDATE_GEN.UNDERFLOW_reg) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/OP/FLAGS_REG.NOT_LATE_UPDATE_GEN.OVERFLOW_reg) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (DIV_OP.SPD.OP/OP/FLAGS_REG.NOT_LATE_UPDATE_GEN.INVALID_OP_reg) is unused and will be removed from module floating_point_v7_1_4_viv__parameterized3.
+WARNING: [Synth 8-3332] Sequential element (tmp_19_cast_reg_743_reg[4]) is unused and will be removed from module c1.
+WARNING: [Synth 8-3332] Sequential element (c1_CRTL_BUS_s_axi_U/rdata_data_reg[31]) is unused and will be removed from module c1.
+WARNING: [Synth 8-3332] Sequential element (c1_KERNEL_BUS_s_axi_U/waddr_reg[1]) is unused and will be removed from module c1.
+WARNING: [Synth 8-3332] Sequential element (c1_KERNEL_BUS_s_axi_U/waddr_reg[0]) is unused and will be removed from module c1.
+WARNING: [Synth 8-3332] Sequential element (tmp_i_i_i_reg_923_reg[31]) is unused and will be removed from module c1.
+WARNING: [Synth 8-3332] Sequential element (c1_CRTL_BUS_s_axi_U/rstate_reg[2]) is unused and will be removed from module c1.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\grp_exp_generic_float_s_fu_339/sh_assign_1_cast_reg_955_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\tmp_21_cast_reg_769_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\tmp_24_cast_reg_864_reg[5] )
+WARNING: [Synth 8-3332] Sequential element (grp_exp_generic_float_s_fu_339/sh_assign_1_cast_reg_955_reg[8]) is unused and will be removed from module c1.
+WARNING: [Synth 8-3332] Sequential element (tmp_21_cast_reg_769_reg[5]) is unused and will be removed from module c1.
+WARNING: [Synth 8-3332] Sequential element (tmp_24_cast_reg_864_reg[5]) is unused and will be removed from module c1.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 720.816 ; gain = 427.730
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 845.949 ; gain = 552.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:46 . Memory (MB): peak = 875.125 ; gain = 582.039
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'U0/tmp_21_cast_reg_769_reg[1]' (FDE) to 'U0/kernel_1_reg_777_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_24_cast_reg_864_reg[1]' (FDE) to 'U0/kernel_2_reg_872_reg[1]'
+INFO: [Synth 8-4480] The timing for the instance U0/c1_KERNEL_BUS_s_axi_U/int_filter_w/gen_write[1].mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/c1_KERNEL_BUS_s_axi_U/int_filter_w/gen_write[1].mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/c1_KERNEL_BUS_s_axi_U/int_filter_b/gen_write[1].mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/c1_KERNEL_BUS_s_axi_U/int_filter_b/gen_write[1].mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/grp_exp_generic_float_s_fu_339/hls_exp_reduce_a_1_U/exp_generic_floatbkb_rom_U/q0_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/grp_exp_generic_float_s_fu_339/hls_exp_reduce_a_1_U/exp_generic_floatbkb_rom_U/q0_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 884.270 ; gain = 591.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 884.270 ; gain = 591.184
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 884.270 ; gain = 591.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:49 . Memory (MB): peak = 884.270 ; gain = 591.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:49 . Memory (MB): peak = 884.270 ; gain = 591.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:49 . Memory (MB): peak = 884.270 ; gain = 591.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:49 . Memory (MB): peak = 884.270 ; gain = 591.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |    41|
+|2     |DSP48E1    |     1|
+|3     |DSP48E1_1  |     1|
+|4     |DSP48E1_2  |     1|
+|5     |DSP48E1_3  |     1|
+|6     |DSP48E1_4  |     1|
+|7     |DSP48E1_5  |     1|
+|8     |DSP48E1_6  |     1|
+|9     |DSP48E1_7  |     1|
+|10    |DSP48E1_8  |     1|
+|11    |LUT1       |    91|
+|12    |LUT2       |   244|
+|13    |LUT3       |   993|
+|14    |LUT4       |   190|
+|15    |LUT5       |   352|
+|16    |LUT6       |   501|
+|17    |MUXCY      |   732|
+|18    |MUXF7      |     6|
+|19    |RAMB18E1   |     2|
+|20    |RAMB18E1_1 |     1|
+|21    |RAMB36E1   |     2|
+|22    |SRL16E     |    50|
+|23    |XORCY      |   682|
+|24    |FDE        |    11|
+|25    |FDRE       |  1674|
+|26    |FDSE       |    14|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:49 . Memory (MB): peak = 884.270 ; gain = 591.184
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 255 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:38 . Memory (MB): peak = 884.270 ; gain = 350.887
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:49 . Memory (MB): peak = 884.270 ; gain = 591.184
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1480 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 222 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 211 instances
+  FDE => FDRE: 11 instances
+
+407 Infos, 178 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 884.270 ; gain = 592.809
+INFO: [Common 17-1381] The checkpoint 'F:/project/lenet-5/lenet-5/lenet-5.runs/lenet_c1_0_0_synth_1/lenet_c1_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ip/lenet_c1_0_0/lenet_c1_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 218 cell refs.
+INFO: [Common 17-1381] The checkpoint 'F:/project/lenet-5/lenet-5/lenet-5.runs/lenet_c1_0_0_synth_1/lenet_c1_0_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 884.270 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 27 23:49:00 2019...

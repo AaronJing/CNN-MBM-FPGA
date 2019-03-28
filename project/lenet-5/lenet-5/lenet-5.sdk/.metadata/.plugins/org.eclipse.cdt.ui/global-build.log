@@ -1,0 +1,859 @@
+00:33:30 **** Build of project lenet-5_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/axidma_v9_3/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v9_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/c1_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/c1_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/tmrctr_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/axidma_v9_3/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v9_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling axidma"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/c1_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/c1_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling c1"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+xscugic_g.c:53:2: warning: missing initializer for field 'HandlerTable' of 'XScuGic_Config {aka struct <anonymous>}' [-Wmissing-field-initializers]
+  }
+  ^
+In file included from xscugic_g.c:41:0:
+xscugic.h:218:27: note: 'HandlerTable' declared here
+  XScuGic_VectorTableEntry HandlerTable[XSCUGIC_MAX_NUM_INTR_INPUTS];/**<
+                           ^~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/tmrctr_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling tmrctr"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+00:33:46 **** Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: lenet-5.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lenet-5_bsp/ps7_cortexa9_0/lib -o "lenet-5.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: lenet-5.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lenet-5.elf  |tee "lenet-5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19056	   1148	  22576	  42780	   a71c	lenet-5.elf
+'Finished building: lenet-5.elf.size'
+' '
+00:35:12 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:7:28: fatal error: AxiTimerHelper.h: No such file or directory
+ #include "AxiTimerHelper.h"
+                            ^
+compilation terminated.
+make: *** [src/main.o] ´íÎó 1
+00:36:04 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: lenet-5.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lenet-5_bsp/ps7_cortexa9_0/lib -o "lenet-5.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: lenet-5.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lenet-5.elf  |tee "lenet-5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19056	   1148	  22576	  42780	   a71c	lenet-5.elf
+'Finished building: lenet-5.elf.size'
+' '
+00:38:24 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:13:13: error: 'c1_input_width' was not declared in this scope
+ float input[c1_input_width][c1_input_width]={{0,1,1,1},
+             ^~~~~~~~~~~~~~
+../src/main.cc:13:29: error: 'c1_input_width' was not declared in this scope
+ float input[c1_input_width][c1_input_width]={{0,1,1,1},
+                             ^~~~~~~~~~~~~~
+../src/main.cc:18:14: error: 'c1_filter' was not declared in this scope
+ float weight[c1_filter*c1_filter_size*c1_filter_size]={-1,1,1,1,
+              ^~~~~~~~~
+../src/main.cc:18:24: error: 'c1_filter_size' was not declared in this scope
+ float weight[c1_filter*c1_filter_size*c1_filter_size]={-1,1,1,1,
+                        ^~~~~~~~~~~~~~
+../src/main.cc:18:39: error: 'c1_filter_size' was not declared in this scope
+ float weight[c1_filter*c1_filter_size*c1_filter_size]={-1,1,1,1,
+                                       ^~~~~~~~~~~~~~
+../src/main.cc:24:12: error: 'c1_filter' was not declared in this scope
+ float bias[c1_filter]={2,2,2,2,2,2};
+            ^~~~~~~~~
+make: *** [src/main.o] ´íÎó 1
+00:39:13 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: lenet-5.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lenet-5_bsp/ps7_cortexa9_0/lib -o "lenet-5.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: lenet-5.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lenet-5.elf  |tee "lenet-5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19056	   1332	  22576	  42964	   a7d4	lenet-5.elf
+'Finished building: lenet-5.elf.size'
+' '
+00:44:05 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:51:1: error: 'XDoimgproc' does not name a type
+ XDoimgproc doImgProc;
+ ^~~~~~~~~~
+../src/main.cc: In function 'int initDoImgProc()':
+../src/main.cc:56:2: error: 'XDoimgproc_Config' was not declared in this scope
+  XDoimgproc_Config *doImgProc_cfg;
+  ^~~~~~~~~~~~~~~~~
+../src/main.cc:56:21: error: 'doImgProc_cfg' was not declared in this scope
+  XDoimgproc_Config *doImgProc_cfg;
+                     ^~~~~~~~~~~~~
+../src/main.cc:57:42: error: 'XPAR_DOIMGPROC_0_DEVICE_ID' was not declared in this scope
+  doImgProc_cfg = XDoimgproc_LookupConfig(XPAR_DOIMGPROC_0_DEVICE_ID);
+                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:57:68: error: 'XDoimgproc_LookupConfig' was not declared in this scope
+  doImgProc_cfg = XDoimgproc_LookupConfig(XPAR_DOIMGPROC_0_DEVICE_ID);
+                                                                    ^
+../src/main.cc:62:37: error: 'doImgProc' was not declared in this scope
+  status = XDoimgproc_CfgInitialize(&doImgProc,doImgProc_cfg);
+                                     ^~~~~~~~~
+../src/main.cc:62:60: error: 'XDoimgproc_CfgInitialize' was not declared in this scope
+  status = XDoimgproc_CfgInitialize(&doImgProc,doImgProc_cfg);
+                                                            ^
+make: *** [src/main.o] ´íÎó 1
+00:44:16 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:51:1: error: 'Xc1' does not name a type
+ Xc1 doImgProc;
+ ^~~
+../src/main.cc: In function 'int initDoImgProc()':
+../src/main.cc:56:2: error: 'XDoimgproc_Config' was not declared in this scope
+  XDoimgproc_Config *doImgProc_cfg;
+  ^~~~~~~~~~~~~~~~~
+../src/main.cc:56:21: error: 'doImgProc_cfg' was not declared in this scope
+  XDoimgproc_Config *doImgProc_cfg;
+                     ^~~~~~~~~~~~~
+../src/main.cc:57:42: error: 'XPAR_DOIMGPROC_0_DEVICE_ID' was not declared in this scope
+  doImgProc_cfg = XDoimgproc_LookupConfig(XPAR_DOIMGPROC_0_DEVICE_ID);
+                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:57:68: error: 'XDoimgproc_LookupConfig' was not declared in this scope
+  doImgProc_cfg = XDoimgproc_LookupConfig(XPAR_DOIMGPROC_0_DEVICE_ID);
+                                                                    ^
+../src/main.cc:62:37: error: 'doImgProc' was not declared in this scope
+  status = XDoimgproc_CfgInitialize(&doImgProc,doImgProc_cfg);
+                                     ^~~~~~~~~
+../src/main.cc:62:60: error: 'XDoimgproc_CfgInitialize' was not declared in this scope
+  status = XDoimgproc_CfgInitialize(&doImgProc,doImgProc_cfg);
+                                                            ^
+make: *** [src/main.o] ´íÎó 1
+00:44:37 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int initDoImgProc()':
+../src/main.cc:56:2: error: 'XDoimgproc_Config' was not declared in this scope
+  XDoimgproc_Config *doImgProc_cfg;
+  ^~~~~~~~~~~~~~~~~
+../src/main.cc:56:21: error: 'doImgProc_cfg' was not declared in this scope
+  XDoimgproc_Config *doImgProc_cfg;
+                     ^~~~~~~~~~~~~
+../src/main.cc:57:42: error: 'XPAR_DOIMGPROC_0_DEVICE_ID' was not declared in this scope
+  doImgProc_cfg = XDoimgproc_LookupConfig(XPAR_DOIMGPROC_0_DEVICE_ID);
+                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:57:68: error: 'XDoimgproc_LookupConfig' was not declared in this scope
+  doImgProc_cfg = XDoimgproc_LookupConfig(XPAR_DOIMGPROC_0_DEVICE_ID);
+                                                                    ^
+../src/main.cc:62:60: error: 'XDoimgproc_CfgInitialize' was not declared in this scope
+  status = XDoimgproc_CfgInitialize(&doImgProc,doImgProc_cfg);
+                                                            ^
+make: *** [src/main.o] ´íÎó 1
+00:45:00 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int initDoImgProc()':
+../src/main.cc:57:42: error: 'XPAR_DOIMGPROC_0_DEVICE_ID' was not declared in this scope
+  doImgProc_cfg = XDoimgproc_LookupConfig(XPAR_DOIMGPROC_0_DEVICE_ID);
+                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:57:68: error: 'XDoimgproc_LookupConfig' was not declared in this scope
+  doImgProc_cfg = XDoimgproc_LookupConfig(XPAR_DOIMGPROC_0_DEVICE_ID);
+                                                                    ^
+../src/main.cc:62:37: error: 'doImgProc' was not declared in this scope
+  status = XDoimgproc_CfgInitialize(&doImgProc,doImgProc_cfg);
+                                     ^~~~~~~~~
+../src/main.cc:62:60: error: 'XDoimgproc_CfgInitialize' was not declared in this scope
+  status = XDoimgproc_CfgInitialize(&doImgProc,doImgProc_cfg);
+                                                            ^
+make: *** [src/main.o] ´íÎó 1
+00:45:09 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int initDoImgProc()':
+../src/main.cc:57:2: error: 'doImgProc_cfg' was not declared in this scope
+  doImgProc_cfg = XDoimgproc_LookupConfig(XPAR_DOIMGPROC_0_DEVICE_ID);
+  ^~~~~~~~~~~~~
+../src/main.cc:57:42: error: 'XPAR_DOIMGPROC_0_DEVICE_ID' was not declared in this scope
+  doImgProc_cfg = XDoimgproc_LookupConfig(XPAR_DOIMGPROC_0_DEVICE_ID);
+                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:57:68: error: 'XDoimgproc_LookupConfig' was not declared in this scope
+  doImgProc_cfg = XDoimgproc_LookupConfig(XPAR_DOIMGPROC_0_DEVICE_ID);
+                                                                    ^
+../src/main.cc:62:37: error: 'doImgProc' was not declared in this scope
+  status = XDoimgproc_CfgInitialize(&doImgProc,doImgProc_cfg);
+                                     ^~~~~~~~~
+../src/main.cc:62:60: error: 'XDoimgproc_CfgInitialize' was not declared in this scope
+  status = XDoimgproc_CfgInitialize(&doImgProc,doImgProc_cfg);
+                                                            ^
+../src/main.cc:56:14: warning: unused variable 'doCnn_cfg' [-Wunused-variable]
+  XC1_Config *doCnn_cfg;
+              ^~~~~~~~~
+make: *** [src/main.o] ´íÎó 1
+00:45:32 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int initDoImgProc()':
+../src/main.cc:57:31: error: 'XPAR_DOIMGPROC_0_DEVICE_ID' was not declared in this scope
+  doCnn_cfg = XC1_LookupConfig(XPAR_DOIMGPROC_0_DEVICE_ID);
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:58:7: error: 'doImgProc_cfg' was not declared in this scope
+  if (!doImgProc_cfg)
+       ^~~~~~~~~~~~~
+../src/main.cc:62:37: error: 'doImgProc' was not declared in this scope
+  status = XDoimgproc_CfgInitialize(&doImgProc,doImgProc_cfg);
+                                     ^~~~~~~~~
+../src/main.cc:62:47: error: 'doImgProc_cfg' was not declared in this scope
+  status = XDoimgproc_CfgInitialize(&doImgProc,doImgProc_cfg);
+                                               ^~~~~~~~~~~~~
+../src/main.cc:62:60: error: 'XDoimgproc_CfgInitialize' was not declared in this scope
+  status = XDoimgproc_CfgInitialize(&doImgProc,doImgProc_cfg);
+                                                            ^
+make: *** [src/main.o] ´íÎó 1
+00:46:09 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int initDoImgProc()':
+../src/main.cc:57:31: error: 'XPAR_DOIMGPROC_0_DEVICE_ID' was not declared in this scope
+  doCnn_cfg = XC1_LookupConfig(XPAR_DOIMGPROC_0_DEVICE_ID);
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cc:58:7: error: 'doImgProc_cfg' was not declared in this scope
+  if (!doImgProc_cfg)
+       ^~~~~~~~~~~~~
+../src/main.cc:62:37: error: 'doImgProc' was not declared in this scope
+  status = XDoimgproc_CfgInitialize(&doImgProc,doImgProc_cfg);
+                                     ^~~~~~~~~
+../src/main.cc:62:47: error: 'doImgProc_cfg' was not declared in this scope
+  status = XDoimgproc_CfgInitialize(&doImgProc,doImgProc_cfg);
+                                               ^~~~~~~~~~~~~
+../src/main.cc:62:60: error: 'XDoimgproc_CfgInitialize' was not declared in this scope
+  status = XDoimgproc_CfgInitialize(&doImgProc,doImgProc_cfg);
+                                                            ^
+make: *** [src/main.o] ´íÎó 1
+00:46:39 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int initDoImgProc()':
+../src/main.cc:58:7: error: 'doImgProc_cfg' was not declared in this scope
+  if (!doImgProc_cfg)
+       ^~~~~~~~~~~~~
+../src/main.cc:62:37: error: 'doImgProc' was not declared in this scope
+  status = XDoimgproc_CfgInitialize(&doImgProc,doImgProc_cfg);
+                                     ^~~~~~~~~
+../src/main.cc:62:47: error: 'doImgProc_cfg' was not declared in this scope
+  status = XDoimgproc_CfgInitialize(&doImgProc,doImgProc_cfg);
+                                               ^~~~~~~~~~~~~
+../src/main.cc:62:60: error: 'XDoimgproc_CfgInitialize' was not declared in this scope
+  status = XDoimgproc_CfgInitialize(&doImgProc,doImgProc_cfg);
+                                                            ^
+make: *** [src/main.o] ´íÎó 1
+00:46:54 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int initDoImgProc()':
+../src/main.cc:62:37: error: 'doImgProc' was not declared in this scope
+  status = XDoimgproc_CfgInitialize(&doImgProc,doImgProc_cfg);
+                                     ^~~~~~~~~
+../src/main.cc:62:47: error: 'doImgProc_cfg' was not declared in this scope
+  status = XDoimgproc_CfgInitialize(&doImgProc,doImgProc_cfg);
+                                               ^~~~~~~~~~~~~
+../src/main.cc:62:60: error: 'XDoimgproc_CfgInitialize' was not declared in this scope
+  status = XDoimgproc_CfgInitialize(&doImgProc,doImgProc_cfg);
+                                                            ^
+make: *** [src/main.o] ´íÎó 1
+00:47:11 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int initDoImgProc()':
+../src/main.cc:62:30: error: 'doImgProc' was not declared in this scope
+  status = XC1_CfgInitialize(&doImgProc,doImgProc_cfg);
+                              ^~~~~~~~~
+../src/main.cc:62:40: error: 'doImgProc_cfg' was not declared in this scope
+  status = XC1_CfgInitialize(&doImgProc,doImgProc_cfg);
+                                        ^~~~~~~~~~~~~
+make: *** [src/main.o] ´íÎó 1
+00:47:32 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: lenet-5.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lenet-5_bsp/ps7_cortexa9_0/lib -o "lenet-5.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: lenet-5.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lenet-5.elf  |tee "lenet-5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54788	   2452	  24384	  81624	  13ed8	lenet-5.elf
+'Finished building: lenet-5.elf.size'
+' '
+00:48:03 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:73:9: error: 'initC1' was not declared in this scope
+  initC1();
+         ^
+make: *** [src/main.o] ´íÎó 1
+00:48:29 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: lenet-5.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lenet-5_bsp/ps7_cortexa9_0/lib -o "lenet-5.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: lenet-5.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lenet-5.elf  |tee "lenet-5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54808	   2452	  24392	  81652	  13ef4	lenet-5.elf
+'Finished building: lenet-5.elf.size'
+' '
+00:52:59 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:75:48: error: cannot convert 'XC1' to 'XC1*' for argument '1' to 'u32 XC1_Write_filter_w_Words(XC1*, int, int*, int)'
+   XC1_Write_filter_w_Words(doCnn, 0, weight, 24);
+                                                ^
+make: *** [src/main.o] ´íÎó 1
+00:53:23 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:75:49: error: cannot convert 'float*' to 'int*' for argument '3' to 'u32 XC1_Write_filter_w_Words(XC1*, int, int*, int)'
+   XC1_Write_filter_w_Words(&doCnn, 0, weight, 24);
+                                                 ^
+make: *** [src/main.o] ´íÎó 1
+01:00:59 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: lenet-5.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lenet-5_bsp/ps7_cortexa9_0/lib -o "lenet-5.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: lenet-5.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lenet-5.elf  |tee "lenet-5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54824	   2452	  24392	  81668	  13f04	lenet-5.elf
+'Finished building: lenet-5.elf.size'
+' '
+01:01:33 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: lenet-5.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lenet-5_bsp/ps7_cortexa9_0/lib -o "lenet-5.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: lenet-5.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lenet-5.elf  |tee "lenet-5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54888	   2452	  24392	  81732	  13f44	lenet-5.elf
+'Finished building: lenet-5.elf.size'
+' '
+01:02:12 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: lenet-5.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lenet-5_bsp/ps7_cortexa9_0/lib -o "lenet-5.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: lenet-5.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lenet-5.elf  |tee "lenet-5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54888	   2452	  24392	  81732	  13f44	lenet-5.elf
+'Finished building: lenet-5.elf.size'
+' '
+01:04:43 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: lenet-5.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lenet-5_bsp/ps7_cortexa9_0/lib -o "lenet-5.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: lenet-5.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lenet-5.elf  |tee "lenet-5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54952	   2460	  24392	  81804	  13f8c	lenet-5.elf
+'Finished building: lenet-5.elf.size'
+' '
+01:06:42 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:84:45: error: 'SIZE_ARR' was not declared in this scope
+   XAxiDma_SimpleTransfer(&axiDma,(u32)input,SIZE_ARR*sizeof(unsigned char),XAXIDMA_DMA_TO_DEVICE);
+                                             ^~~~~~~~
+make: *** [src/main.o] ´íÎó 1
+01:07:14 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:85:55: error: 'SIZE_ARR' was not declared in this scope
+   XAxiDma_SimpleTransfer(&axiDma,(u32)m_dma_buffer_RX,SIZE_ARR*sizeof(unsigned char),XAXIDMA_DEVICE_TO_DMA);
+                                                       ^~~~~~~~
+make: *** [src/main.o] ´íÎó 1
+01:07:37 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: lenet-5.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lenet-5_bsp/ps7_cortexa9_0/lib -o "lenet-5.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: lenet-5.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lenet-5.elf  |tee "lenet-5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55016	   2460	  24392	  81868	  13fcc	lenet-5.elf
+'Finished building: lenet-5.elf.size'
+' '
+01:08:33 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: lenet-5.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lenet-5_bsp/ps7_cortexa9_0/lib -o "lenet-5.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: lenet-5.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lenet-5.elf  |tee "lenet-5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55080	   2460	  24392	  81932	  1400c	lenet-5.elf
+'Finished building: lenet-5.elf.size'
+' '
+01:10:47 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: lenet-5.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lenet-5_bsp/ps7_cortexa9_0/lib -o "lenet-5.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: lenet-5.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lenet-5.elf  |tee "lenet-5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94020	   2852	  25096	 121968	  1dc70	lenet-5.elf
+'Finished building: lenet-5.elf.size'
+' '
+01:11:02 **** Incremental Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+01:13:28 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:93:36: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+    printf("%f\n",m_dma_buffer_RX[i]);
+                                    ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: lenet-5.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lenet-5_bsp/ps7_cortexa9_0/lib -o "lenet-5.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: lenet-5.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lenet-5.elf  |tee "lenet-5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94020	   2852	  25096	 121968	  1dc70	lenet-5.elf
+'Finished building: lenet-5.elf.size'
+' '
+01:13:34 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: lenet-5.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lenet-5_bsp/ps7_cortexa9_0/lib -o "lenet-5.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: lenet-5.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lenet-5.elf  |tee "lenet-5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94020	   2852	  25096	 121968	  1dc70	lenet-5.elf
+'Finished building: lenet-5.elf.size'
+' '
+01:13:41 **** Incremental Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+01:14:28 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:75:49: error: cannot convert 'float*' to 'int*' for argument '3' to 'u32 XC1_Write_filter_w_Words(XC1*, int, int*, int)'
+   XC1_Write_filter_w_Words(&doCnn, 0, weight, 24);
+                                                 ^
+../src/main.cc:76:46: error: cannot convert 'float*' to 'int*' for argument '3' to 'u32 XC1_Write_filter_b_Words(XC1*, int, int*, int)'
+   XC1_Write_filter_b_Words(&doCnn, 0, bias, 6);
+                                              ^
+make: *** [src/main.o] ´íÎó 1
+01:14:44 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: lenet-5.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lenet-5_bsp/ps7_cortexa9_0/lib -o "lenet-5.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: lenet-5.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lenet-5.elf  |tee "lenet-5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94020	   2852	  25096	 121968	  1dc70	lenet-5.elf
+'Finished building: lenet-5.elf.size'
+' '
+01:14:48 **** Incremental Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+01:18:36 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:97:88: error: request for member 'data' in '*(m_dma_buffer_RX + ((sizetype)(((unsigned int)((((z * 3) * 3) + (i * 3)) + j)) * 4u)))', which is of non-class type 'float'
+       printf("%f|",m_dma_buffer_RX[z*c1_output_size*c1_output_size+i*c1_output_size+j].data);
+                                                                                        ^~~~
+make: *** [src/main.o] ´íÎó 1
+01:18:59 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: lenet-5.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lenet-5_bsp/ps7_cortexa9_0/lib -o "lenet-5.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: lenet-5.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lenet-5.elf  |tee "lenet-5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94420	   2852	  25096	 122368	  1de00	lenet-5.elf
+'Finished building: lenet-5.elf.size'
+' '
+01:19:07 **** Incremental Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+01:19:57 **** Incremental Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:00:48 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: lenet-5.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lenet-5_bsp/ps7_cortexa9_0/lib -o "lenet-5.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: lenet-5.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lenet-5.elf  |tee "lenet-5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94420	   2852	  25096	 122368	  1de00	lenet-5.elf
+'Finished building: lenet-5.elf.size'
+' '
+18:01:02 **** Auto Build of configuration Debug for project lenet-5 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lenet-5_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: lenet-5.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lenet-5_bsp/ps7_cortexa9_0/lib -o "lenet-5.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: lenet-5.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lenet-5.elf  |tee "lenet-5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94420	   2852	  25096	 122368	  1de00	lenet-5.elf
+'Finished building: lenet-5.elf.size'
+' '

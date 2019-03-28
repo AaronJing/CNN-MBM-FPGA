@@ -1,0 +1,17 @@
+
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'output.data' (hls_lenet/cnn.cpp:18).
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'convolution_input_col_loop' (hls_lenet/cnn.cpp:67:55) in function 'c1' : 
+                         the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+WARNING: [XFORM 203-631] Renaming function 'hls::exp_reduce_::exp_generic<float>' (r:/builds/2017.2/nightly/2017_06_15_1909853/src/products/hls/hls_lib/src/hls/hls_exp_.h:165) into exp_generic<float>.
+
+WARNING: [SYN 201-103] Legalizing function name 'exp_generic<float>' to 'exp_generic_float_s'.
+WARNING: [SCHED 204-68] Unable to enforce a carried constraint (II = 1)
+   between 'fadd' operation ('temp', hls_lenet/cnn.cpp:76) and 'fadd' operation ('temp', hls_lenet/cnn.cpp:76).
+WARNING: [SCHED 204-68] Unable to enforce a carried constraint (II = 2)
+   between 'fadd' operation ('temp', hls_lenet/cnn.cpp:76) and 'fadd' operation ('temp', hls_lenet/cnn.cpp:76).
+WARNING: [SCHED 204-68] Unable to enforce a carried constraint (II = 3)
+   between 'fadd' operation ('temp', hls_lenet/cnn.cpp:76) and 'fadd' operation ('temp', hls_lenet/cnn.cpp:76).
+
+WARNING: [BIND 205-102] The specified resource core for memory 'input_image_bram' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'conv_out' will be ignored if a simpler one can be used.
+

@@ -1,0 +1,35 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.8  2016-12-21 bk=1.3817 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y -390 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y -370 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 1 -y -780 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 4 -y -250 -defaultsOSRD
+preplace inst c1_0 -pg 1 -lvl 1 -y -510 -defaultsOSRD
+preplace inst axi_timer_0 -pg 1 -lvl 1 -y -320 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 4 -y -540 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 3 -y -600 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -y -310 -defaultsOSRD
+preplace netloc ps7_0_axi_periph_M02_AXI 1 0 5 30J -910 NJ -910 NJ -910 NJ -910 1910J
+preplace netloc processing_system7_0_DDR 1 2 3 1170J -350 NJ -350 1900J
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 2 1130J -690 1550J
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 0 4 10J -160 NJ -160 1170J -220 1520
+preplace netloc axi_smc_M00_AXI 1 1 4 650 -170 NJ -170 NJ -170 1890
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 2 1 1160
+preplace netloc ps7_0_axi_periph_M03_AXI 1 0 5 40 -420 650J -440 NJ -440 1510J -360 1890
+preplace netloc c1_0_output_r 1 0 2 40 -900 640
+preplace netloc ps7_0_axi_periph_M01_AXI 1 0 5 40J -660 660J -720 NJ -720 NJ -720 1890
+preplace netloc axi_dma_0_M_AXI_MM2S 1 1 3 NJ -840 NJ -840 1560
+preplace netloc processing_system7_0_FIXED_IO 1 2 3 1140J -340 NJ -340 1910J
+preplace netloc axi_dma_0_M_AXI_S2MM 1 1 3 NJ -820 NJ -820 1540
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 0 -220 630 -180 1150 -710 1530
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 0 2 20 -890 630
+preplace netloc ps7_0_axi_periph_M00_AXI 1 0 5 30J -670 650J -730 NJ -730 NJ -730 1900
+preplace netloc rst_ps7_0_100M_interconnect_aresetn 1 3 1 1510
+levelinfo -pg 1 -20 450 900 1340 1740 1930 -top -1120 -bot 180
+",
+}
+{
+   da_axi4_cnt: "6",
+   da_ps7_cnt: "1",
+}

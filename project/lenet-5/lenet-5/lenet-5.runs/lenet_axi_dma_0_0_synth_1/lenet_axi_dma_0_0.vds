@@ -1,0 +1,256 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Mar 27 23:46:43 2019
+# Process ID: 11924
+# Current directory: F:/project/lenet-5/lenet-5/lenet-5.runs/lenet_axi_dma_0_0_synth_1
+# Command line: vivado.exe -log lenet_axi_dma_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lenet_axi_dma_0_0.tcl
+# Log file: F:/project/lenet-5/lenet-5/lenet-5.runs/lenet_axi_dma_0_0_synth_1/lenet_axi_dma_0_0.vds
+# Journal file: F:/project/lenet-5/lenet-5/lenet-5.runs/lenet_axi_dma_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source lenet_axi_dma_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 385.332 ; gain = 81.945
+INFO: [Synth 8-638] synthesizing module 'lenet_axi_dma_0_0' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ip/lenet_axi_dma_0_0/synth/lenet_axi_dma_0_0.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'axi_dma' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/bb0b/hdl/axi_dma_v7_1_vh_rfs.vhd:21830]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_rst_module' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/bb0b/hdl/axi_dma_v7_1_vh_rfs.vhd:1595]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (1#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_reset' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/bb0b/hdl/axi_dma_v7_1_vh_rfs.vhd:603]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_reset' (2#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/bb0b/hdl/axi_dma_v7_1_vh_rfs.vhd:603]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_rst_module' (3#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/bb0b/hdl/axi_dma_v7_1_vh_rfs.vhd:1595]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_reg_module' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/bb0b/hdl/axi_dma_v7_1_vh_rfs.vhd:8254]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_lite_if' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/bb0b/hdl/axi_dma_v7_1_vh_rfs.vhd:2066]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_lite_if' (4#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/bb0b/hdl/axi_dma_v7_1_vh_rfs.vhd:2066]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_register' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/bb0b/hdl/axi_dma_v7_1_vh_rfs.vhd:3604]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_register' (5#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/bb0b/hdl/axi_dma_v7_1_vh_rfs.vhd:3604]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_register_s2mm' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/bb0b/hdl/axi_dma_v7_1_vh_rfs.vhd:4837]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_register_s2mm' (6#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/bb0b/hdl/axi_dma_v7_1_vh_rfs.vhd:4837]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_reg_module' (7#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/bb0b/hdl/axi_dma_v7_1_vh_rfs.vhd:8254]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_mm2s_mngr' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/bb0b/hdl/axi_dma_v7_1_vh_rfs.vhd:14884]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_smple_sm' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/bb0b/hdl/axi_dma_v7_1_vh_rfs.vhd:11685]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_smple_sm' (8#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/bb0b/hdl/axi_dma_v7_1_vh_rfs.vhd:11685]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_mm2s_cmdsts_if' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/bb0b/hdl/axi_dma_v7_1_vh_rfs.vhd:13668]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_mm2s_cmdsts_if' (9#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/bb0b/hdl/axi_dma_v7_1_vh_rfs.vhd:13668]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_mm2s_sts_mngr' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/bb0b/hdl/axi_dma_v7_1_vh_rfs.vhd:13983]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_mm2s_sts_mngr' (10#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/bb0b/hdl/axi_dma_v7_1_vh_rfs.vhd:13983]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_mm2s_mngr' (11#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/bb0b/hdl/axi_dma_v7_1_vh_rfs.vhd:14884]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_sofeof_gen' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/bb0b/hdl/axi_dma_v7_1_vh_rfs.vhd:11155]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_sofeof_gen' (12#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/bb0b/hdl/axi_dma_v7_1_vh_rfs.vhd:11155]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_s2mm_mngr' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/bb0b/hdl/axi_dma_v7_1_vh_rfs.vhd:20222]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_s2mm_cmdsts_if' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/bb0b/hdl/axi_dma_v7_1_vh_rfs.vhd:18487]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_s2mm_cmdsts_if' (13#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/bb0b/hdl/axi_dma_v7_1_vh_rfs.vhd:18487]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_s2mm_sts_mngr' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/bb0b/hdl/axi_dma_v7_1_vh_rfs.vhd:18917]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_s2mm_sts_mngr' (14#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/bb0b/hdl/axi_dma_v7_1_vh_rfs.vhd:18917]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_s2mm_mngr' (15#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/bb0b/hdl/axi_dma_v7_1_vh_rfs.vhd:20222]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:55410]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_mm2s_full_wrap' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:53548]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_reset' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:153]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_reset' (16#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_cmd_status' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:2693]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo' (17#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized0' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized0' (17#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_cmd_status' (18#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:2693]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rd_status_cntl' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:13741]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rd_status_cntl' (19#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:13741]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_pcc' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:7411]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:4337]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2' (20#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:4337]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2__parameterized0' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:4337]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2__parameterized0' (20#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:4337]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_pcc' (21#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:7411]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_addr_cntl' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:9995]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized1' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (22#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (23#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (24#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f' (25#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized1' (25#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_addr_cntl' (26#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:9995]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rddata_cntl' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:12180]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rdmux' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:10676]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rdmux' (27#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:10676]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized2' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized0' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized0' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized0' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized0' (27#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized0' (27#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized0' (27#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized2' (27#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rddata_cntl' (28#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:12180]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rd_sf' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:20200]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized3' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized1' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized1' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized1' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized1' (28#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized1' (28#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized1' (28#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized3' (28#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_sfifo_autord' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1294]
+INFO: [Synth 8-638] synthesizing module 'sync_fifo_fg' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/c387/hdl/lib_fifo_v1_0_rfs.vhd:2097]
+INFO: [Synth 8-256] done synthesizing module 'sync_fifo_fg' (57#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/c387/hdl/lib_fifo_v1_0_rfs.vhd:2097]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_sfifo_autord' (58#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1294]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rd_sf' (59#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:20200]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_mm2s_dre' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:30455]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_dre_mux2_1_x_n' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:29942]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_dre_mux2_1_x_n' (60#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:29942]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_dre_mux4_1_x_n' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:30089]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_dre_mux4_1_x_n' (61#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:30089]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_mm2s_dre' (62#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:30455]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_skid_buf' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:19492]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_skid_buf' (63#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:19492]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_mm2s_full_wrap' (64#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:53548]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_full_wrap' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:49982]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_cmd_status__parameterized0' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:2693]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized4' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized4' (64#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_cmd_status__parameterized0' (64#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:2693]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_wr_status_cntl' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:17697]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized5' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized2' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized2' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f__parameterized0' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f__parameterized0' (64#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized2' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized2' (64#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized2' (64#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized2' (64#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized5' (64#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized6' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized3' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized3' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized3' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized3' (64#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized3' (64#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized3' (64#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized6' (64#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wr_status_cntl' (65#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:17697]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_ibttcc' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:25723]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_ibttcc' (66#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:25723]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_realign' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:46998]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized7' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized4' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized4' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized4' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized4' (66#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized4' (66#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized4' (66#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized7' (66#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_dre' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:36555]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_dre' (67#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:36555]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_scatter' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:45105]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_mssai_skid_buf' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:44155]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_ms_strb_set' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:42595]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_ms_strb_set' (68#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:42595]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_mssai_skid_buf' (69#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:44155]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_slice' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:44844]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_slice' (70#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:44844]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized8' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized5' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized5' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f__parameterized1' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f__parameterized1' (70#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized5' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized5' (70#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized5' (70#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized5' (70#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized8' (70#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_scatter' (71#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:45105]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_realign' (72#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:46998]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_indet_btt' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:28422]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_stbs_set' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:23402]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_stbs_set' (73#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:23402]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_sfifo_autord__parameterized0' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1294]
+INFO: [Synth 8-638] synthesizing module 'sync_fifo_fg__parameterized0' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/c387/hdl/lib_fifo_v1_0_rfs.vhd:2097]
+INFO: [Synth 8-256] done synthesizing module 'sync_fifo_fg__parameterized0' (74#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/c387/hdl/lib_fifo_v1_0_rfs.vhd:2097]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_sfifo_autord__parameterized0' (74#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1294]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_sfifo_autord__parameterized1' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1294]
+INFO: [Synth 8-638] synthesizing module 'sync_fifo_fg__parameterized1' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/c387/hdl/lib_fifo_v1_0_rfs.vhd:2097]
+INFO: [Synth 8-256] done synthesizing module 'sync_fifo_fg__parameterized1' (74#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/c387/hdl/lib_fifo_v1_0_rfs.vhd:2097]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_sfifo_autord__parameterized1' (74#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1294]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_skid_buf__parameterized0' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:19492]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_skid_buf__parameterized0' (74#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:19492]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_indet_btt' (75#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:28422]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_addr_cntl__parameterized0' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:9995]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_addr_cntl__parameterized0' (75#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:9995]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_wrdata_cntl' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:15669]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized9' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized6' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized6' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized6' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized6' (75#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized6' (75#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized6' (75#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized9' (75#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wrdata_cntl' (76#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:15669]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_skid2mm_buf' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:18990]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_wr_demux' [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:14112]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wr_demux' (77#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:14112]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_skid2mm_buf' (78#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:18990]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_full_wrap' (79#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:49982]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover' (80#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:55410]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma' (81#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ipshared/bb0b/hdl/axi_dma_v7_1_vh_rfs.vhd:21830]
+INFO: [Synth 8-256] done synthesizing module 'lenet_axi_dma_0_0' (82#1) [f:/project/lenet-5/lenet-5/lenet-5.srcs/sources_1/bd/lenet/ip/lenet_axi_dma_0_0/synth/lenet_axi_dma_0_0.vhd:128]
+Finished RTL Elaboration : Time (s): cpu = 00:02:41 ; elapsed = 00:02:42 . Memory (MB): peak = 675.457 ; gain = 372.070
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:41 ; elapsed = 00:02:43 . Memory (MB): peak = 675.457 ; gain = 372.070
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 817.215 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:02:50 ; elapsed = 00:02:56 . Memory (MB): peak = 817.215 ; gain = 513.828
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:50 ; elapsed = 00:02:56 . Memory (MB): peak = 817.215 ; gain = 513.828
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:50 ; elapsed = 00:02:56 . Memory (MB): peak = 817.215 ; gain = 513.828
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:53 ; elapsed = 00:02:59 . Memory (MB): peak = 817.215 ; gain = 513.828
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:58 ; elapsed = 00:03:04 . Memory (MB): peak = 817.215 ; gain = 513.828
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++---------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+----------------------+--------------+
+|Module Name          | RTL Object                                                                                                                                                                                                                      | Inference      | Size (Depth x Width) | Primitives   | 
++---------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+----------------------+--------------+
+|U0/I_PRMRY_DATAMOVER | GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/FAMILY_SUPPORTED.I_SYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 8 x 9                | RAM32M x 2   | 
++---------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:05 ; elapsed = 00:03:11 . Memory (MB): peak = 817.215 ; gain = 513.828
+Finished Timing Optimization : Time (s): cpu = 00:03:07 ; elapsed = 00:03:14 . Memory (MB): peak = 855.617 ; gain = 552.230
+Finished Technology Mapping : Time (s): cpu = 00:03:09 ; elapsed = 00:03:15 . Memory (MB): peak = 855.617 ; gain = 552.230
+Finished IO Insertion : Time (s): cpu = 00:03:09 ; elapsed = 00:03:15 . Memory (MB): peak = 855.617 ; gain = 552.230
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:09 ; elapsed = 00:03:15 . Memory (MB): peak = 855.617 ; gain = 552.230
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:10 ; elapsed = 00:03:16 . Memory (MB): peak = 855.617 ; gain = 552.230
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:10 ; elapsed = 00:03:16 . Memory (MB): peak = 855.617 ; gain = 552.230
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:10 ; elapsed = 00:03:16 . Memory (MB): peak = 855.617 ; gain = 552.230
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:10 ; elapsed = 00:03:16 . Memory (MB): peak = 855.617 ; gain = 552.230
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    52|
+|2     |LUT1     |   105|
+|3     |LUT2     |   219|
+|4     |LUT3     |   441|
+|5     |LUT4     |   266|
+|6     |LUT5     |   262|
+|7     |LUT6     |   459|
+|8     |MUXF7    |     1|
+|9     |RAM32M   |     2|
+|10    |RAMB36E1 |     2|
+|11    |SRL16E   |   173|
+|12    |FDR      |     8|
+|13    |FDRE     |  2149|
+|14    |FDSE     |    70|
++------+---------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:10 ; elapsed = 00:03:16 . Memory (MB): peak = 855.617 ; gain = 552.230
+synth_design: Time (s): cpu = 00:03:13 ; elapsed = 00:03:19 . Memory (MB): peak = 855.617 ; gain = 559.996

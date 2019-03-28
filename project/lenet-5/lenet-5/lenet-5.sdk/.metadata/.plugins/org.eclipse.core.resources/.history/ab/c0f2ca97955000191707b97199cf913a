@@ -1,0 +1,15 @@
+/*
+ * Empty C++ Application
+ */
+#include <stdio.h>
+#include "xaxidma.h"
+#include "xc1.h"
+
+
+#define mem_base_addr 0x01000000
+
+
+int main()
+{
+	return 0;
+}

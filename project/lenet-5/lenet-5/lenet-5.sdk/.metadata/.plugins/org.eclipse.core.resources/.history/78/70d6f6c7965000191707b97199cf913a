@@ -1,0 +1,73 @@
+/*
+ * Empty C++ Application
+ */
+#include <stdio.h>
+#include "xaxidma.h"
+#include "xc1.h"
+
+///// first convolution layer /////
+#define c1_input_width 4
+#define c1_filter 6
+///// 2D kernel 5*5			  /////
+#define c1_filter_size 2
+///// 3D output 28*28*6       /////
+#define c1_output_size 3
+#define c1_output_width 6
+
+#define mem_base_addr 0x01000000
+#define tx_buffer_base (mem_base_addr + 0x00100000)
+#define rx_buffer_base (mem_base_addr + 0x00300000)
+
+
+float input[c1_input_width][c1_input_width]={{0,1,1,1},
+				 {1,0,1,1},
+				 {1,1,0,1},
+				 {1,1,1,0}};
+
+float weight[c1_filter*c1_filter_size*c1_filter_size]={-1,1,1,1,
+														1,-1,1,1,
+														1,1,-1,1,
+														1,1,1,-1,
+														-1,1,1,1,
+														1,-1,1,1};
+float bias[c1_filter]={2,2,2,2,2,2};
+
+
+XAxiDma axiDma;
+int initDMA()
+{
+	XAxiDma_Config *CfgPtr;
+	CfgPtr = XAxiDma_LookupConfig(XPAR_AXI_DMA_0_DEVICE_ID);
+	XAxiDma_CfgInitialize(&axiDma,CfgPtr);
+
+	// Disable interrupts
+	XAxiDma_IntrDisable(&axiDma,XAXIDMA_IRQ_ALL_MASK,XAXIDMA_DEVICE_TO_DMA);
+	XAxiDma_IntrDisable(&axiDma,XAXIDMA_IRQ_ALL_MASK,XAXIDMA_DMA_TO_DEVICE);
+
+	return XST_SUCCESS;
+}
+
+
+XC1 doCnn;
+int initDoImgProc()
+{
+	int status;
+
+	XC1_Config *doCnn_cfg;
+	doCnn_cfg = XC1_LookupConfig(XPAR_C1_0_DEVICE_ID);
+	if (!doImgProc_cfg)
+	{
+		printf("Error loading config for doHist_cfg\n");
+	}
+	status = XDoimgproc_CfgInitialize(&doImgProc,doImgProc_cfg);
+	if (status != XST_SUCCESS)
+	{
+		printf("Error initializing for doHist\n");
+	}
+
+	return status;
+}
+int main()
+{
+	return 0;
+}
