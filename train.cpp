@@ -841,12 +841,11 @@ int main() {
         start_time = clock();
         predict(test_sample);
         printf("predict time is....%f s\n\n", (double)(clock() - start_time) / CLOCKS_PER_SEC);
+        
         cout << "saving weights & bias...\n";
         save_param();
         cout << "Saved!!!\n";
-        // for (int j = 0; j < 25; j++){
-        //   cout << c1_conv_layer.kernel[0].W[j] <<endl;
-        // }
+
         learning_rate *= 0.85;//逐步缩小学习率
     }
 
