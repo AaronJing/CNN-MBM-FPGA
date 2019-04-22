@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="cnn.cpp" path="Z:\cnn.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="cnn_tb.cpp" path="Z:\Yao-edit\cnn_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
