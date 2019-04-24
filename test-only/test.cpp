@@ -510,6 +510,27 @@ int find_index(double *label) {
     return index;
 }
 
+void save_l_output(Layer* layer, string layer_name){
+    int m_size = layer->map_w*layer->map_h;
+    ofstream weight_file(layer_name.c_str());
+    for (int i = 0; i < layer->map_count; i++){
+        for (int k = 0; k < m_size; k++){
+            weight_file << layer->map[i].data[k] << endl;
+        }
+    }
+    weight_file.close();
+}
+
+void save_output(){
+    save_l_output(&input_layer, "io.txt");
+    save_l_output(&c1_conv_layer, "c1o.txt");
+    save_l_output(&s2_pooling_layer, "s2o.txt");
+    save_l_output(&c3_conv_layer, "c3o.txt");
+    save_l_output(&s4_pooling_layer, "s4o.txt");
+    save_l_output(&c5_conv_layer, "c5o.txt");
+    save_l_output(&output_layer, "oo.txt");
+}
+
 
 void predict(Sample * test_sample) {
     int num_success = 0, predict = 0, actual = 0;
@@ -521,6 +542,7 @@ void predict(Sample * test_sample) {
         memcpy(input_layer.map[0].data, test_sample[i].data, data_mem_size);
         // cout << i << endl;
         forward_propagation();
+        if (i == 0) save_output();
 
         predict = find_index(&output_layer);
         actual = find_index(test_sample[i].label);
@@ -639,6 +661,7 @@ int main() {
     // 训练及测试
     clock_t start_time = 0;
     predict(test_sample);
+
 
     // for (int i = 0; i < test_sample_count; i++) {
     //     free(test_sample[i].data);
