@@ -659,8 +659,9 @@ int main() {
 
 
     // 训练及测试
-    clock_t start_time = 0;
+    clock_t start_time = clock();
     predict(test_sample);
+    cout << "time used: " << (double)(clock()-start_time) / CLOCKS_PER_SEC << "s" << endl;
 
 
     // for (int i = 0; i < test_sample_count; i++) {
