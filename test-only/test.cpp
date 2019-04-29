@@ -622,6 +622,21 @@ int main() {
     load_mnist_data(test_sample, test_sample_path);
     load_mnist_label(test_sample, test_label_path);
 
+    ofstream input_label("input_labels.txt");
+    ofstream input_data("input_data.txt");
+
+    for (int i = 0; i < 1000; i++){
+
+        input_label << find_index(test_sample[i].label) << "," << endl;
+
+        for (int k = 0; k < 32*32; k++){
+            input_data << test_sample[i].data[k] << "," << endl;
+        }
+    }
+
+    input_label.close();
+    input_data.close();
+
     // 输入层In
     kernel_w = 0;
     kernel_h = 0;
