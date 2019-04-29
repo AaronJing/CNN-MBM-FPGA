@@ -10,16 +10,16 @@
 #include "cnn.h"
 #include <math.h>
 #include <xtime_l.h>
+#include "ptwalk.h"
 
 
 #define mem_base_addr 0x01000000
 
-#define tx_buffer_base (mem_base_addr + 0x00100000)
-
 #define rx_buffer_base (mem_base_addr + 0x01500000)
 
+float output[10] __attribute__ ((aligned(4069)));
 
-float input[102400] = {
+float input[102400] __attribute__ ((aligned(4069))) = {
 	#include "input.txt"
 };
 float label[100] = {
@@ -56,6 +56,7 @@ float fc_w[1200]={
 float fc_b[10]={
 	#include "ob.txt"
 };
+
 float *m_dma_buffer_RX = (float*)rx_buffer_base;
 
 
@@ -107,260 +108,38 @@ int main()
 {
 	XTime start,end;
 
-	 printf("Starting hardware\n");
+	mlock(input, sizeof(input));
+
+	printf("Starting hardware\n");
 	initDMA();
 	initTOP();
-
-
-//	XTop_Write_filter_w_c1_0_Words(&doCnn,0,(int*)c1_w,25);
-//	XTop_Write_filter_w_c1_1_Words(&doCnn,0,(int*)c1_w+25,25);
-//	XTop_Write_filter_w_c1_2_Words(&doCnn,0,(int*)c1_w+50,25);
-//	XTop_Write_filter_w_c1_3_Words(&doCnn,0,(int*)c1_w+75,25);
-//	XTop_Write_filter_w_c1_4_Words(&doCnn,0,(int*)c1_w+100,25);
-//	XTop_Write_filter_w_c1_5_Words(&doCnn,0,(int*)c1_w+125,25);
-//
-//	 XTop_Set_filter_b_c1_0(&doCnn,c1_b[0]);
-//	 XTop_Set_filter_b_c1_1(&doCnn,c1_b[1]);
-//	 XTop_Set_filter_b_c1_2(&doCnn,c1_b[2]);
-//	 XTop_Set_filter_b_c1_3(&doCnn,c1_b[3]);
-//	 XTop_Set_filter_b_c1_4(&doCnn,c1_b[4]);
-//	 XTop_Set_filter_b_c1_5(&doCnn,c1_b[5]);
-
-
-
-
-	// 0 2 4 6 8... 2nd partition row, 1st parition row
-	// 1-16set - 1st filter
-	// even
-//	XTop_Write_filter_w_c3_0_0_Words(&doCnn,0,(int*)c3_w,25);
-//	XTop_Write_filter_w_c3_0_0_Words(&doCnn,25,(int*)c3_w+(6*25*2),25);
-//	XTop_Write_filter_w_c3_0_0_Words(&doCnn,50,(int*)c3_w+(6*25*4),25);
-//	XTop_Write_filter_w_c3_0_0_Words(&doCnn,75,(int*)c3_w+(6*25*6),25);
-//	XTop_Write_filter_w_c3_0_0_Words(&doCnn,100,(int*)c3_w+(6*25*8),25);
-//	XTop_Write_filter_w_c3_0_0_Words(&doCnn,125,(int*)c3_w+(6*25*10),25);
-//	XTop_Write_filter_w_c3_0_0_Words(&doCnn,150,(int*)c3_w+(6*25*12),25);
-//	XTop_Write_filter_w_c3_0_0_Words(&doCnn,175,(int*)c3_w+(6*25*14),25);
-//
-//	// odd
-//	XTop_Write_filter_w_c3_1_0_Words(&doCnn,0,(int*)c3_w+(6*25*1),25);
-//	XTop_Write_filter_w_c3_1_0_Words(&doCnn,25,(int*)c3_w+(6*25*3),25);
-//	XTop_Write_filter_w_c3_1_0_Words(&doCnn,50,(int*)c3_w+(6*25*5),25);
-//	XTop_Write_filter_w_c3_1_0_Words(&doCnn,75,(int*)c3_w+(6*25*7),25);
-//	XTop_Write_filter_w_c3_1_0_Words(&doCnn,100,(int*)c3_w+(6*25*9),25);
-//	XTop_Write_filter_w_c3_1_0_Words(&doCnn,125,(int*)c3_w+(6*25*11),25);
-//	XTop_Write_filter_w_c3_1_0_Words(&doCnn,150,(int*)c3_w+(6*25*13),25);
-//	XTop_Write_filter_w_c3_1_0_Words(&doCnn,175,(int*)c3_w+(6*25*15),25);
-//
-//	// 1-16set - 2nd filter
-//	// even
-//	XTop_Write_filter_w_c3_0_1_Words(&doCnn,0,(int*)c3_w+25,25);
-//	XTop_Write_filter_w_c3_0_1_Words(&doCnn,25,(int*)c3_w+(6*25*2)+25,25);
-//	XTop_Write_filter_w_c3_0_1_Words(&doCnn,50,(int*)c3_w+(6*25*4)+25,25);
-//	XTop_Write_filter_w_c3_0_1_Words(&doCnn,75,(int*)c3_w+(6*25*6)+25,25);
-//	XTop_Write_filter_w_c3_0_1_Words(&doCnn,100,(int*)c3_w+(6*25*8)+25,25);
-//	XTop_Write_filter_w_c3_0_1_Words(&doCnn,125,(int*)c3_w+(6*25*10)+25,25);
-//	XTop_Write_filter_w_c3_0_1_Words(&doCnn,150,(int*)c3_w+(6*25*12)+25,25);
-//	XTop_Write_filter_w_c3_0_1_Words(&doCnn,175,(int*)c3_w+(6*25*14)+25,25);
-//
-//	// odd
-//	XTop_Write_filter_w_c3_1_1_Words(&doCnn,0,(int*)c3_w+(6*25*1)+25,25);
-//	XTop_Write_filter_w_c3_1_1_Words(&doCnn,25,(int*)c3_w+(6*25*3)+25,25);
-//	XTop_Write_filter_w_c3_1_1_Words(&doCnn,50,(int*)c3_w+(6*25*5)+25,25);
-//	XTop_Write_filter_w_c3_1_1_Words(&doCnn,75,(int*)c3_w+(6*25*7)+25,25);
-//	XTop_Write_filter_w_c3_1_1_Words(&doCnn,100,(int*)c3_w+(6*25*9)+25,25);
-//	XTop_Write_filter_w_c3_1_1_Words(&doCnn,125,(int*)c3_w+(6*25*11)+25,25);
-//	XTop_Write_filter_w_c3_1_1_Words(&doCnn,150,(int*)c3_w+(6*25*13)+25,25);
-//	XTop_Write_filter_w_c3_1_1_Words(&doCnn,175,(int*)c3_w+(6*25*15)+25,25);
-//
-//	// 1-16set - 3rd filter
-//	// even
-//	XTop_Write_filter_w_c3_0_2_Words(&doCnn,0,(int*)c3_w+50,25);
-//	XTop_Write_filter_w_c3_0_2_Words(&doCnn,25,(int*)c3_w+(6*25*2)+50,25);
-//	XTop_Write_filter_w_c3_0_2_Words(&doCnn,50,(int*)c3_w+(6*25*4)+50,25);
-//	XTop_Write_filter_w_c3_0_2_Words(&doCnn,75,(int*)c3_w+(6*25*6)+50,25);
-//	XTop_Write_filter_w_c3_0_2_Words(&doCnn,100,(int*)c3_w+(6*25*8)+50,25);
-//	XTop_Write_filter_w_c3_0_2_Words(&doCnn,125,(int*)c3_w+(6*25*10)+50,25);
-//	XTop_Write_filter_w_c3_0_2_Words(&doCnn,150,(int*)c3_w+(6*25*12)+50,25);
-//	XTop_Write_filter_w_c3_0_2_Words(&doCnn,175,(int*)c3_w+(6*25*14)+50,25);
-//
-//	// odd
-//	XTop_Write_filter_w_c3_1_2_Words(&doCnn,0,(int*)c3_w+(6*25*1)+50,25);
-//	XTop_Write_filter_w_c3_1_2_Words(&doCnn,25,(int*)c3_w+(6*25*3)+50,25);
-//	XTop_Write_filter_w_c3_1_2_Words(&doCnn,50,(int*)c3_w+(6*25*5)+50,25);
-//	XTop_Write_filter_w_c3_1_2_Words(&doCnn,75,(int*)c3_w+(6*25*7)+50,25);
-//	XTop_Write_filter_w_c3_1_2_Words(&doCnn,100,(int*)c3_w+(6*25*9)+50,25);
-//	XTop_Write_filter_w_c3_1_2_Words(&doCnn,125,(int*)c3_w+(6*25*11)+50,25);
-//	XTop_Write_filter_w_c3_1_2_Words(&doCnn,150,(int*)c3_w+(6*25*13)+50,25);
-//	XTop_Write_filter_w_c3_1_2_Words(&doCnn,175,(int*)c3_w+(6*25*15)+50,25);
-//
-//
-//	// 1-16set - 4th filter
-//	// even
-//	XTop_Write_filter_w_c3_0_3_Words(&doCnn,0,(int*)c3_w+75,25);
-//	XTop_Write_filter_w_c3_0_3_Words(&doCnn,25,(int*)c3_w+(6*25*2)+75,25);
-//	XTop_Write_filter_w_c3_0_3_Words(&doCnn,50,(int*)c3_w+(6*25*4)+75,25);
-//	XTop_Write_filter_w_c3_0_3_Words(&doCnn,75,(int*)c3_w+(6*25*6)+75,25);
-//	XTop_Write_filter_w_c3_0_3_Words(&doCnn,100,(int*)c3_w+(6*25*8)+75,25);
-//	XTop_Write_filter_w_c3_0_3_Words(&doCnn,125,(int*)c3_w+(6*25*10)+75,25);
-//	XTop_Write_filter_w_c3_0_3_Words(&doCnn,150,(int*)c3_w+(6*25*12)+75,25);
-//	XTop_Write_filter_w_c3_0_3_Words(&doCnn,175,(int*)c3_w+(6*25*14)+75,25);
-//
-//	// odd
-//	XTop_Write_filter_w_c3_1_3_Words(&doCnn,0,(int*)c3_w+(6*25*1)+75,25);
-//	XTop_Write_filter_w_c3_1_3_Words(&doCnn,25,(int*)c3_w+(6*25*3)+75,25);
-//	XTop_Write_filter_w_c3_1_3_Words(&doCnn,50,(int*)c3_w+(6*25*5)+75,25);
-//	XTop_Write_filter_w_c3_1_3_Words(&doCnn,75,(int*)c3_w+(6*25*7)+75,25);
-//	XTop_Write_filter_w_c3_1_3_Words(&doCnn,100,(int*)c3_w+(6*25*9)+75,25);
-//	XTop_Write_filter_w_c3_1_3_Words(&doCnn,125,(int*)c3_w+(6*25*11)+75,25);
-//	XTop_Write_filter_w_c3_1_3_Words(&doCnn,150,(int*)c3_w+(6*25*13)+75,25);
-//	XTop_Write_filter_w_c3_1_3_Words(&doCnn,175,(int*)c3_w+(6*25*15)+75,25);
-//
-//
-//	// 1-16set - 5th filter
-//	// even
-//	XTop_Write_filter_w_c3_0_4_Words(&doCnn,0,(int*)c3_w+100,25);
-//	XTop_Write_filter_w_c3_0_4_Words(&doCnn,25,(int*)c3_w+(6*25*2)+100,25);
-//	XTop_Write_filter_w_c3_0_4_Words(&doCnn,50,(int*)c3_w+(6*25*4)+100,25);
-//	XTop_Write_filter_w_c3_0_4_Words(&doCnn,75,(int*)c3_w+(6*25*6)+100,25);
-//	XTop_Write_filter_w_c3_0_4_Words(&doCnn,100,(int*)c3_w+(6*25*8)+100,25);
-//	XTop_Write_filter_w_c3_0_4_Words(&doCnn,125,(int*)c3_w+(6*25*10)+100,25);
-//	XTop_Write_filter_w_c3_0_4_Words(&doCnn,150,(int*)c3_w+(6*25*12)+100,25);
-//	XTop_Write_filter_w_c3_0_4_Words(&doCnn,175,(int*)c3_w+(6*25*14)+100,25);
-//
-//	// odd
-//	XTop_Write_filter_w_c3_1_4_Words(&doCnn,0,(int*)c3_w+(6*25*1)+100,25);
-//	XTop_Write_filter_w_c3_1_4_Words(&doCnn,25,(int*)c3_w+(6*25*3)+100,25);
-//	XTop_Write_filter_w_c3_1_4_Words(&doCnn,50,(int*)c3_w+(6*25*5)+100,25);
-//	XTop_Write_filter_w_c3_1_4_Words(&doCnn,75,(int*)c3_w+(6*25*7)+100,25);
-//	XTop_Write_filter_w_c3_1_4_Words(&doCnn,100,(int*)c3_w+(6*25*9)+100,25);
-//	XTop_Write_filter_w_c3_1_4_Words(&doCnn,125,(int*)c3_w+(6*25*11)+100,25);
-//	XTop_Write_filter_w_c3_1_4_Words(&doCnn,150,(int*)c3_w+(6*25*13)+100,25);
-//	XTop_Write_filter_w_c3_1_4_Words(&doCnn,175,(int*)c3_w+(6*25*15)+100,25);
-//
-//	// 1-16set - 6th filter
-//	// even
-//	XTop_Write_filter_w_c3_0_5_Words(&doCnn,0,(int*)c3_w+125,25);
-//	XTop_Write_filter_w_c3_0_5_Words(&doCnn,25,(int*)c3_w+(6*25*2)+125,25);
-//	XTop_Write_filter_w_c3_0_5_Words(&doCnn,50,(int*)c3_w+(6*25*4)+125,25);
-//	XTop_Write_filter_w_c3_0_5_Words(&doCnn,75,(int*)c3_w+(6*25*6)+125,25);
-//	XTop_Write_filter_w_c3_0_5_Words(&doCnn,100,(int*)c3_w+(6*25*8)+125,25);
-//	XTop_Write_filter_w_c3_0_5_Words(&doCnn,125,(int*)c3_w+(6*25*10)+125,25);
-//	XTop_Write_filter_w_c3_0_5_Words(&doCnn,150,(int*)c3_w+(6*25*12)+125,25);
-//	XTop_Write_filter_w_c3_0_5_Words(&doCnn,175,(int*)c3_w+(6*25*14)+125,25);
-//
-//	// odd
-//	XTop_Write_filter_w_c3_1_5_Words(&doCnn,0,(int*)c3_w+(6*25*1)+125,25);
-//	XTop_Write_filter_w_c3_1_5_Words(&doCnn,25,(int*)c3_w+(6*25*3)+125,25);
-//	XTop_Write_filter_w_c3_1_5_Words(&doCnn,50,(int*)c3_w+(6*25*5)+125,25);
-//	XTop_Write_filter_w_c3_1_5_Words(&doCnn,75,(int*)c3_w+(6*25*7)+125,25);
-//	XTop_Write_filter_w_c3_1_5_Words(&doCnn,100,(int*)c3_w+(6*25*9)+125,25);
-//	XTop_Write_filter_w_c3_1_5_Words(&doCnn,125,(int*)c3_w+(6*25*11)+125,25);
-//	XTop_Write_filter_w_c3_1_5_Words(&doCnn,150,(int*)c3_w+(6*25*13)+125,25);
-//	XTop_Write_filter_w_c3_1_5_Words(&doCnn,175,(int*)c3_w+(6*25*15)+125,25);
-//
-//	XTop_Set_filter_b_c3_0(&doCnn,c3_b[0]);
-//	XTop_Set_filter_b_c3_1(&doCnn,c3_b[1]);
-//	XTop_Set_filter_b_c3_2(&doCnn,c3_b[2]);
-//	XTop_Set_filter_b_c3_3(&doCnn,c3_b[3]);
-//	XTop_Set_filter_b_c3_4(&doCnn,c3_b[4]);
-//	XTop_Set_filter_b_c3_5(&doCnn,c3_b[5]);
-//	XTop_Set_filter_b_c3_6(&doCnn,c3_b[6]);
-//	XTop_Set_filter_b_c3_7(&doCnn,c3_b[7]);
-//	XTop_Set_filter_b_c3_8(&doCnn,c3_b[8]);
-//	XTop_Set_filter_b_c3_9(&doCnn,c3_b[9]);
-//	XTop_Set_filter_b_c3_10(&doCnn,c3_b[10]);
-//	XTop_Set_filter_b_c3_11(&doCnn,c3_b[11]);
-//	XTop_Set_filter_b_c3_12(&doCnn,c3_b[12]);
-//	XTop_Set_filter_b_c3_13(&doCnn,c3_b[13]);
-//	XTop_Set_filter_b_c3_14(&doCnn,c3_b[14]);
-//	XTop_Set_filter_b_c3_15(&doCnn,c3_b[15]);
-//
-//	//XTop_Write_filter_b_c3_Words(&doCnn,0,(int*)c3_b,16);
-//	for(int i = 0; i < 120; i ++){
-//		XTop_Write_filter_w_c5_0_Words(&doCnn,i*25,(int*)c5_w+(i*16*25),25);
-//	}
-//	for(int i = 0; i < 120; i ++){
-//			XTop_Write_filter_w_c5_1_Words(&doCnn,i*25,(int*)c5_w+(i*16*25+25),25);
-//		}
-//	for(int i = 0; i < 120; i ++){
-//			XTop_Write_filter_w_c5_2_Words(&doCnn,i*25,(int*)c5_w+(i*16*25+50),25);
-//		}
-//
-//	for(int i = 0; i < 120; i ++){
-//			XTop_Write_filter_w_c5_3_Words(&doCnn,i*25,(int*)c5_w+(i*16*25+75),25);
-//		}
-//	for(int i = 0; i < 120; i ++){
-//			XTop_Write_filter_w_c5_4_Words(&doCnn,i*25,(int*)c5_w+(i*16*25+100),25);
-//		}
-//	for(int i = 0; i < 120; i ++){
-//			XTop_Write_filter_w_c5_5_Words(&doCnn,i*25,(int*)c5_w+(i*16*25+125),25);
-//		}
-//	for(int i = 0; i < 120; i ++){
-//			XTop_Write_filter_w_c5_6_Words(&doCnn,i*25,(int*)c5_w+(i*16*25+150),25);
-//		}
-//	for(int i = 0; i < 120; i ++){
-//			XTop_Write_filter_w_c5_7_Words(&doCnn,i*25,(int*)c5_w+(i*16*25+175),25);
-//		}
-//	for(int i = 0; i < 120; i ++){
-//			XTop_Write_filter_w_c5_8_Words(&doCnn,i*25,(int*)c5_w+(i*16*25+200),25);
-//		}
-//	for(int i = 0; i < 120; i ++){
-//			XTop_Write_filter_w_c5_9_Words(&doCnn,i*25,(int*)c5_w+(i*16*25+225),25);
-//		}
-//	for(int i = 0; i < 120; i ++){
-//			XTop_Write_filter_w_c5_10_Words(&doCnn,i*25,(int*)c5_w+(i*16*25+250),25);
-//		}
-//	for(int i = 0; i < 120; i ++){
-//			XTop_Write_filter_w_c5_11_Words(&doCnn,i*25,(int*)c5_w+(i*16*25+275),25);
-//		}
-//	for(int i = 0; i < 120; i ++){
-//			XTop_Write_filter_w_c5_12_Words(&doCnn,i*25,(int*)c5_w+(i*16*25+300),25);
-//		}
-//	for(int i = 0; i < 120; i ++){
-//			XTop_Write_filter_w_c5_13_Words(&doCnn,i*25,(int*)c5_w+(i*16*25+325),25);
-//		}
-//	for(int i = 0; i < 120; i ++){
-//			XTop_Write_filter_w_c5_14_Words(&doCnn,i*25,(int*)c5_w+(i*16*25+350),25);
-//		}
-//	for(int i = 0; i < 120; i ++){
-//			XTop_Write_filter_w_c5_15_Words(&doCnn,i*25,(int*)c5_w+(i*16*25+375),25);
-//		}
-//
-//
-//
-//
-//
-//	XTop_Write_filter_b_c5_Words(&doCnn,0,(int*)c5_b,120);
-//
-//
-//
-//	XTop_Write_filter_w_fc_Words(&doCnn,0,(int*)fc_w,1200);
-//	XTop_Write_filter_b_fc_Words(&doCnn,0,(int*)fc_b,10);
 
 	XTop_Start(&doCnn);
 	XTop_EnableAutoRestart(&doCnn);
 
-	 float correctnum = 0;
-	 Xil_DCacheFlushRange((u32)(input),102400*sizeof(float));
+	float correctnum = 0;
+	Xil_DCacheFlushRange((u32)(input),102400*sizeof(float));
+	Xil_DCacheFlushRange((u32)m_dma_buffer_RX,10*sizeof(float));
 
-	 Xil_DCacheFlushRange((u32)m_dma_buffer_RX,10*sizeof(float));
-	 XTime_GetTime(&start);
+	XTime_GetTime(&start);
+	(u32) phys_output = virt_to_phys((u32)(output));
+
 	 for(int i =0; i<100; i++){
 
+		(u32) phys_input = virt_to_phys((u32)(input+i*1024));
 
 
-
-		 XAxiDma_SimpleTransfer(&axiDma,(u32)(input+i*1024),1024*sizeof(float),XAXIDMA_DMA_TO_DEVICE);
-		 XAxiDma_SimpleTransfer(&axiDma,(u32)m_dma_buffer_RX,10*sizeof(float),XAXIDMA_DEVICE_TO_DMA);
+		 XAxiDma_SimpleTransfer(&axiDma,(u32)phys_input,1024*sizeof(float),XAXIDMA_DMA_TO_DEVICE);
+		 XAxiDma_SimpleTransfer(&axiDma,(u32)phys_output,10*sizeof(float),XAXIDMA_DEVICE_TO_DMA);
 
 		 while(XAxiDma_Busy(&axiDma,XAXIDMA_DMA_TO_DEVICE));
-
 		 while(XAxiDma_Busy(&axiDma,XAXIDMA_DEVICE_TO_DMA));
-		 Xil_DCacheInvalidateRange((u32)(input+i*1024),1024*sizeof(float));
-		 Xil_DCacheInvalidateRange((u32)m_dma_buffer_RX,10*sizeof(float));
+
+		 // Xil_DCacheInvalidateRange((u32)phys_input,1024*sizeof(float));
+		 // Xil_DCacheInvalidateRange((u32)phys_output,10*sizeof(float));
 
 
-		 if(find_max(m_dma_buffer_RX) == label[i])
+		 if(find_max(phys_output) == label[i])
 			 correctnum++;
 	 }
 
