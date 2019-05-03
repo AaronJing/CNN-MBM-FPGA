@@ -17,7 +17,7 @@ using namespace std;
 
 typedef struct _Sample
 {
-    double *data;//之所以用double是为了后面计算结果更精确
+    double *data;
     double *label;
 
     int sample_w;
@@ -27,14 +27,14 @@ typedef struct _Sample
 
 typedef struct _Kernel
 {
-    double *W; //卷积矩阵
+    double *W; 
     double *dW; //delta W
 } Kernel;
 
 typedef struct _Map
 {
     double *data;
-    double *error;  // 节点误差项矩阵
+    double *error;
     double  b; // bias
     double  db; //delta b
 } Map;
@@ -56,12 +56,12 @@ typedef struct _Layer
 } Layer;
 
 
-const int batch_size = 10;//将训练数据集均分的份数
-const int classes_count = 10;//输出的label种类有0,1,2,3... 十种
+const int batch_size = 10;
+const int classes_count = 10;
 const int width  = 32;
 const int height = 32;
-const int train_sample_count = 60000;//训练集样本数
-const int test_sample_count  = 10000;//测试集样本数
+const int train_sample_count = 60000;
+const int test_sample_count  = 10000;
 
 Layer input_layer, output_layer;
 Layer c1_conv_layer, c3_conv_layer, c5_conv_layer;
@@ -82,7 +82,7 @@ void load_mnist_data(Sample * sample, const char * file_name){
     int sample_number = 0;
     int n_rows = 0, n_cols = 0;
     fread((int *)&magic_number, sizeof(magic_number), 1, fp);
-    //文件存储格式为大端，Intel CPU架构存储为小端，所以需要将字节序反转
+
     magic_number = translateEndian_32(magic_number);
 //    cout << "magic number = " << magic_number << endl;
 
@@ -116,7 +116,7 @@ void load_mnist_data(Sample * sample, const char * file_name){
             for(int j = 0; j < n_cols; j++){
                 fread(&temp, 1, 1, fp);
 //                cout << i << "  "<< j << "---" << (double)temp/255 << endl;
-                sample[k].data[(i + zero_padding) * width + j + zero_padding] = (double)temp/255 * (normalize_max - normalize_min) + normalize_min;//把灰度归一化到[0, 1]
+                sample[k].data[(i + zero_padding) * width + j + zero_padding] = (double)temp/255 * (normalize_max - normalize_min) + normalize_min;
             }
         }
     }
@@ -137,7 +137,7 @@ void load_mnist_label(Sample * sample, const char * file_name){
     int magic_number = 0;
     int sample_number = 0;
     fread((int *)&magic_number, sizeof(magic_number), 1, fp);
-    //文件存储格式为大端，Intel CPU架构存储为小端，所以需要将字节序反转
+
     magic_number = translateEndian_32(magic_number);
 //    cout << "magic number = " << magic_number << endl;
 
@@ -152,7 +152,7 @@ void load_mnist_label(Sample * sample, const char * file_name){
 //        sample[k].label = (double *)malloc(classes_count * sizeof(double));
 //        memset(sample[k].label, 0, classes_count * sizeof(double));
 //        fread(&temp, 1, 1, fp);
-//        sample[k].label[(int)temp] = 1;//todo 正样本label设成1，负样本label设成0
+//        sample[k].label[(int)temp] = 1;
 //        cout << "label == " << (int)temp << endl;
 
         sample[k].label = (double *)malloc(classes_count * sizeof(double));
@@ -259,7 +259,7 @@ void init_layer(Layer *layer, int prevlayer_map_count, int map_count,
     int denominator = fan_in + fan_out;
     double weight_base = (denominator != 0) ? sqrt(scale / (double)denominator) : 0.5;
 
-    layer->kernel_count = prevlayer_map_count * map_count;//需要训练的kernel数目
+    layer->kernel_count = prevlayer_map_count * map_count;
     layer->kernel_w = kernel_w;
     layer->kernel_h = kernel_h;
     layer->kernel = (Kernel *)malloc(layer->kernel_count * sizeof(Kernel));
@@ -335,7 +335,6 @@ struct activation_func {
         return 1.0 - val*val;
     }
 
-    /* scale: 0.1 ~ 0.9 和label初始值对应 */
     inline static double relu(double val) {
         return val > 0.0 ? val : 0.0;
     }
@@ -344,7 +343,6 @@ struct activation_func {
         return val > 0.0 ? 1.0 : 0.0;
     }
 
-    /* scale: 0.1 ~ 0.9 和label初始值对应 */
     inline double sigmoid(double val) {
         return 1.0 / (1.0 + exp(-val));
     }
@@ -366,7 +364,6 @@ struct loss_func {
     }
 };
 
-//卷积函数， 四层for循环，，，，，，
 void convn_valid(double *in_data, int in_w, int in_h, double *kernel, int kernel_w, int kernel_h, double *out_data, int out_w, int out_h) {
     double sum = 0.0;
     for (int i = 0; i < out_h; i++) {
@@ -385,7 +382,7 @@ void convn_valid(double *in_data, int in_w, int in_h, double *kernel, int kernel
 
 #define O true
 #define X false
-//S2到C3不完全连接，经验映射表
+
 bool connection_table[6*16] = {
                 O, X, X, X, O, O, O, X, X, O, O, O, O, X, O, O,
                 O, O, X, X, X, O, O, O, X, X, O, O, O, O, X, O,
@@ -416,7 +413,7 @@ void conv_fprop(Layer *prev_layer, Layer *layer, bool *pconnection) {
         }
 
         for (int k = 0; k < size; k++) {
-            layer->map[i].data[k] = activation_func::tan_h(layer->map_common[k] + layer->map[i].b);//采用双曲正切函数来表示激活函数
+            layer->map[i].data[k] = activation_func::tan_h(layer->map_common[k] + layer->map[i].b);
         }
     }
 }
@@ -478,7 +475,6 @@ void forward_propagation(){
     conv_fprop(&s4_pooling_layer, &c5_conv_layer, NULL);
 
     // cout << "finished!" << endl << endl;
-    //中间省略一层全连接层
 
     // C5-->Out
     fully_connected_fprop(&c5_conv_layer, &output_layer);
@@ -637,43 +633,35 @@ int main() {
     input_label.close();
     input_data.close();
 
-    // 输入层In
     kernel_w = 0;
     kernel_h = 0;
     init_layer(&input_layer, 0, 1, kernel_w, kernel_h, width, height, false, 1);
 
-    // 卷积层C1
     kernel_w = 5;
     kernel_h = 5;
     init_layer(&c1_conv_layer, 1, 6, kernel_w, kernel_h, input_layer.map_w - kernel_w + 1, input_layer.map_h - kernel_h + 1, false, 2);
 
-    // 采样层S2
     kernel_w = 1;
     kernel_h = 1;
     init_layer(&s2_pooling_layer, 1, 6, kernel_w, kernel_h, c1_conv_layer.map_w / 2, c1_conv_layer.map_h / 2, true, 3);
 
-    // 卷积层C3
     kernel_w = 5;
     kernel_h = 5;
     init_layer(&c3_conv_layer, 6, 16, kernel_w, kernel_h, s2_pooling_layer.map_w - kernel_w + 1, s2_pooling_layer.map_h - kernel_h + 1, false, 4);
 
-    // 采样层S4
     kernel_w = 1;
     kernel_h = 1;
     init_layer(&s4_pooling_layer, 1, 16, kernel_w, kernel_h, c3_conv_layer.map_w / 2, c3_conv_layer.map_h / 2, true, 5);
 
-    // 全连接层C5
     kernel_w = 5;
     kernel_h = 5;
     init_layer(&c5_conv_layer, 16, 120, kernel_w, kernel_h, s4_pooling_layer.map_w - kernel_w + 1, s4_pooling_layer.map_h - kernel_h + 1, false, 6);
 
-    // 输出层Out
     kernel_w = 1;
     kernel_h = 1;
     init_layer(&output_layer, 120, 10, kernel_w, kernel_h, 1, 1, false, 7);
 
 
-    // 训练及测试
     clock_t start_time = clock();
     predict(test_sample);
     cout << "time used: " << (double)(clock()-start_time) / CLOCKS_PER_SEC << "s" << endl;
